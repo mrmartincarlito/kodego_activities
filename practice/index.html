@@ -1,23 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>practice HTML</title>
-    <style>
-      .container {
-        text-align: center;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume</title>
+    <link rel="stylesheet" href="./dist/style.css" />
+    <script
+      src="https://kit.fontawesome.com/48823410be.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <div class="container">
-      <h1>My Profile</h1>
-      <h2>Interest</h2>
-      <ul>
-        <li>Fitness</li>
-        <li>Pets</li>
-        <li>Art</li>
-        <li>Tech</li>
-      </ul>
+    <header>
+      <nav>
+        <a href="https://bryansuello.dev"
+          ><img src="./img/logo.png" alt=""
+        /></a>
+        <ul>
+          <a href="#about-me">
+            <li>About Me</li>
+          </a>
+          <a href="#portfolio">
+            <li>Portfolio</li>
+          </a>
+          <a href="#education"><li>Education</li></a>
+        </ul>
+        <div class="burger-menu">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="page-wrapper">
+      <section class="banner">
+        <div>
+          <p>Hi, I'm</p>
+          <a href="https://bryansuello.dev"><h1>Bryan Suello</h1></a>
+          <h2>Full Stack Web Developer</h2>
+          <div class="banner-icons">
+            <a href="https://github.com/bryansuello" target="_blank">
+              <i class="fa-brands fa-github fa-lg"></i>
+            </a>
+            <a href="https://facebook.com/BrySuello9" target="_blank">
+              <i class="fa-brands fa-facebook fa-lg"></i>
+            </a>
+            <a href="https://linkedin.com/bryansuello" target="_blank">
+              <i class="fa-brands fa-linkedin fa-lg"></i>
+            </a>
+            <a href="https://instagram.com/suello.dev" target="_blank">
+              <i class="fa-brands fa-square-instagram fa-lg"></i>
+            </a>
+            <a href="https://behance.net/bryansuello">
+              <i class="fa-brands fa-square-behance fa-lg"></i>
+            </a>
+          </div>
+        </div>
+        <img src="./img/heroBanner.png" alt="profile banner" />
+      </section>
+
+      <div id="about-me" class="about-me">
+        <a href="https://github.com/bryansuello"
+          ><img src="./img/github-banner.jpg" alt="github banner"
+        /></a>
+        <div>
+          <h2>About Me</h2>
+          <p>
+            I'm Bryan Suello. Web Developer from Cebu. I like dogs and sleeping.
+            Quae modi voluptas minima alias itaque vitae accusantium odio eos
+            maxime voluptates.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum
+            eaque iusto molestias quisquam ipsum nisi ut architecto. Aliquam,
+            voluptatem.
+          </p>
+        </div>
+      </div>
+
+      <section id="portfolio" class="portfolio">
+        <h2>Portfolio</h2>
+        <div>
+          <div>
+            <img src="./img/readme-img.png" alt="project 1" />
+            <h4>The Provinceman</h4>
+            <p>
+              Shooter game made with html, css, and javascript. Inspired by a TV
+              show. Enemies randomly pop out.
+            </p>
+          </div>
+          <div>
+            <img src="./img/proj5.jpg" alt="project 2" />
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              eveniet!
+            </p>
+          </div>
+          <div>
+            <img src="./img/proj4.jpg" alt="project 3" />
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              eveniet!
+            </p>
+          </div>
+          <div>
+            <img src="./img/proj3.jpg" alt="project 4" />
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              eveniet!
+            </p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <img src="./img/proj2.jpg" alt="project 5" />
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              eveniet!
+            </p>
+          </div>
+          <div>
+            <img src="./img/proj6.jpg" alt="project 6" />
+            <h4>Title</h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              eveniet!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="work-education">
+        <div>
+          <h2>Education</h2>
+          <ul>
+            <!-- educational attainment -->
+            <li><strong>Kodego</strong> - Full Stack Web Development</li>
+            <li>
+              <strong>University of San Carlos </strong> - Information and
+              Communications Technology
+            </li>
+            <li>
+              <strong>Saint Alphonsus Catholic School</strong> - High School
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Work</h2>
+          <ul>
+            <li><strong>Smarties Apparel</strong> - Graphic Designer</li>
+            <li><strong>Sitel Ph</strong> - Cigna</li>
+            <li><strong>Cnx Cebu</strong> - Amazon</li>
+            <li><strong>Teleperformance Cebu</strong> - JP Morgan & Chase</li>
+            <li><strong>ResultsCX Cebu</strong> - Comcast</li>
+            <li><strong>Qualfon Cebu</strong></li>
+          </ul>
+        </div>
+      </section>
     </div>
+    <footer>
+      <div class="icons">
+        <a href="https://github.com/bryansuello" target="_blank">
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/1051/1051326.png"
+            alt="github icon"
+          />
+        </a>
+        <a href="https://facebook.com/BrySuello9" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/2168/2168281.png"
+            alt="facebook icon"
+        /></a>
+        <a href="https://linkedin.com/bryansuello" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384014.png"
+            alt="linkedin icon"
+        /></a>
+        <a href="https://instagram.com/suello.dev" target="_blank"
+          ><img
+            src="https://cdn-icons-png.flaticon.com/512/1384/1384015.png"
+            alt="instagram icon"
+        /></a>
+      </div>
+      <div>
+        <p>www.bryansuello.dev</p>
+      </div>
+    </footer>
   </body>
 </html>
