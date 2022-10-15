@@ -1,0 +1,59 @@
+body {
+  background-color: rgb(24, 26, 27);
+  color: rgb(232, 230, 227);
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#header-navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 30px;
+  width: 100%;
+  font-size: 1.3rem;
+  font-weight: 300;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding: 2rem 3rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#header-navbar a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+#header-navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+#name {
+  font-weight: 900;
+}
+
+#header-navbar li {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+}
+
+.nav-list:hover {
+  background-color: rgb(8, 68, 166);
+}
+
+main {
+  position: relative;
+  top: 60px;
+}
+
+main img {
+  width: 300px;
+  top: 30px;
+}
+/* color: rgb(69, 159, 246); */
