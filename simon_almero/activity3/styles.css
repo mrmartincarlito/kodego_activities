@@ -1,0 +1,16 @@
+.First {
+    text-align: center;
+}
+.Intro {
+    list-style: none;
+}
+.First ul li {
+    position: relative;
+    font-size: 17px;
+    display: inline-block;
+    align-items: center;
+    margin-right: 35px;
+}
+.Info {
+    list-style: none;
+}
