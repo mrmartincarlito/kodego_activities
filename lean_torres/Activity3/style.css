@@ -1,0 +1,18 @@
+img {
+    margin: auto;
+    display: block;
+}
+
+em {
+    text-decoration: underline;
+
+}
+
+dt {
+    list-style-type: circle;
+}
+
+dd {
+    font-style: italic;
+
+}
