@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
-  <body>
+  <body id="body">
     <header>
       <div id="name">
         <a href="./index.html">Ronaldo Diamante</a>
@@ -25,7 +25,7 @@
             <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="#about-me">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
@@ -42,7 +42,7 @@
 
     <main>
       <section id="about">
-        <h2>About Me</h2>
+        <h2 id="me">About Me</h2>
         <div id="about-me">
           <div>
             <img src="./images/profile.jpg" alt="Profile photo" />
@@ -105,7 +105,7 @@
         <ol>
           <li>
             <h3>Globe Telecom</h3>
-            <p>July 2007 - Present</p>
+            <p class="tenure">July 2007 - Present</p>
             <p>
               Provides technical data and network support for medium and large
               corporate companies in Panay Island, Western Visayas. Profficient
@@ -113,13 +113,13 @@
               and other vendors specific customer equipment like Huawei, ECI,
               Tellabs, Actelis, Telindus and many others. Managed communication
               mediums like copper cables, microwave radios and fiber optics.
-              Competent on using fiber fusin machine for splicing, OTDR, VeEx
+              Competent on using fiber fusion machine for splicing, OTDR, VeEx
               testers for RFCs and high bandwith testing.
             </p>
           </li>
           <li>
-            <h3>Iloilo State College of Fishiries - Dumangas Campus</h3>
-            <p>June 2005 - July 2007</p>
+            <h3>Iloilo State College of Fisheries - Dumangas Campus</h3>
+            <p class="tenure">June 2005 - July 2007</p>
             <p>
               College instructor and handles electronics and computer subjects.
               Developing curricula and delivering course material. Conducting
@@ -130,12 +130,12 @@
           </li>
           <li>
             <h3>Computron Business Center</h3>
-            <p>May 2003 - Jun 2005</p>
+            <p class="tenure">May 2003 - Jun 2005</p>
             <p>
-              Service technecian for Sharp copiers serving whole Panay Island
-              and Cuyo, Palawan. Competent also on repairing common household
-              and office electronic equipments, computer hardware insatllation
-              and maintenance.
+              Service technician for Sharp copiers and serving whole Panay
+              Island including Guimaras and Cuyo, Palawan islands. Repairs
+              common household and office electronic equipments and also
+              computer servicing and maintenance.
             </p>
           </li>
         </ol>
@@ -145,45 +145,36 @@
         <div id="contact-me">
           <form action="/" method="GET">
             <ul>
-              <li>
-                <label for="name">Name</label>
+              <li class="form-control">
+                <label for="username">Name</label>
                 <input
                   type="text"
-                  name="name"
-                  id="name"
-                  required
+                  id="username"
+                  name="username"
                   placeholder="Enter your name"
+                  required
                 />
               </li>
-              <li>
+              <li class="form-control">
                 <label for="email">Email</label>
                 <input
                   type="email"
-                  name="email"
                   id="email"
-                  required
+                  name="email"
                   placeholder="Enter your email"
+                  requiredd
                 />
-              </li>
-              <li>
-                <label for="message">message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  cols="30"
-                  rows="10"
-                  minlength="10"
-                  maxlength="500"
-                  placeholder="Enter your message"
-                ></textarea>
-              </li>
-              <li>
-                <button type="submit">Submit</button>
+                <li class="form-control">
+                  <label for="message">Message</label>
+                  <textarea name="message" id="message" placeholder="Enter your message" required></textarea>
+                
+                </li>
+                <li>
+                  <button type="submit">Submit</button>
+                </li>
               </li>
             </ul>
           </form>
-        </div>
-        <div>
           <ul>
             <li>
               <h3>Email</h3>
@@ -225,7 +216,7 @@
       </section>
     </main>
     <footer>
-      <p>(c) Ronaldo Diamante 2022</p>
+      <p> <a href="#body">© Ronaldo Diamante 2022</a> </p>
     </footer>
   </body>
 </html>
