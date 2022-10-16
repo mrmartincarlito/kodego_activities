@@ -11,19 +11,16 @@ ol {
 }
 
 header {
-  display: block;
   display: flex;
-  height: 30px;
+  height: 3rem;
   width: 100%;
-  display: flex;
   justify-content: space-between;
   font-size: 1.3rem;
-  /* font-weight: 300; */
   align-items: center;
   box-sizing: border-box;
   padding: 2rem 3rem;
   /* position: fixed; */
-  background-color: inherit;
+  background-color: rgb(255, 61, 61);
   top: 0;
   left: 0;
 }
@@ -31,17 +28,22 @@ header {
 header a {
   text-decoration: none;
   color: inherit;
-  cursor: pointer;
 }
 
 header ul {
   list-style: none;
   display: flex;
+  cursor: pointer;
 }
 
 #name {
   font-weight: 600;
   font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#name:hover {
+  color: rgb(0, 16, 43);
 }
 
 header li {
@@ -50,32 +52,84 @@ header li {
   border-radius: 4px;
 }
 
-.nav-list:hover {
+header li:hover {
   background-color: rgb(8, 68, 166);
 }
 
 main {
-  position: absolute;
-  top: 65px;
+  width: 60%;
+  margin: 8rem auto;
 }
 
-main img {
-  width: 300px;
-  top: 30px;
-  display: inline-block;
+#about-me img {
+  width: 16rem;
+  border-radius: 50%;
+  border: 2px solid blue;
 }
 
 main h2 {
   font-size: 3rem;
   font-weight: 500;
   text-align: center;
-  margin: 1rem;
+  color: rgb(45, 153, 255);
+  margin-bottom: 2rem;
 }
 
-h2 {
-  color: rgb(69, 159, 246);
-}
-
-#contact-me {
+#about-me {
   display: flex;
+  font-size: 1.1rem;
+}
+
+#about-me p {
+  text-align: justify;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+#skills {
+  text-align: center;
+  margin-top: 8rem;
+}
+
+#skills span {
+  color: rgb(146, 201, 251);
+}
+
+#skills ul {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+
+#skills img {
+  width: 4rem;
+  display: inline-block;
+  padding-left: 1.2rem;
+}
+
+#skills li {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: rgb(20, 46, 71);
+  background-color: rgb(192, 200, 208);
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgb(174, 174, 174);
+}
+
+#skills p {
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+#experience {
+  margin-top: 8rem;
 }
