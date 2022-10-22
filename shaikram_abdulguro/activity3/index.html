@@ -6,48 +6,35 @@
         <meta name="description" content="This is the summary of my skills"/>
         <meta name="author" content="Aikee" />
         <title>Resume | Shaikram Abdulguro Jr</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="js/all.js" crossorigin="anonymous"></script>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />  
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/stylesheet.css" rel="stylesheet" />
     </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">Aikee</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                </ul>
-            </div>
-        </nav>
+    <body id="page-top" class="container-fluid justify-content-center">
+       
         <!-- Page Content-->
-        <div class="container-fluid p-0">
+        <div class=" content_div">
             <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Shaikram Abdulguro Jr.
-                        <span class="text-primary">(Laravel Developer)</span>
-                    </h1>
+            <section class="resume-section row justify-content-center" id="about">
+                <div class="col-lg-4 col-md-4 col-sm-12 ">
+                    <span class="d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /></span>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 first-resume-section">
+                    <h1 class="mb-0">Shaikram M. Abdulguro Jr.</h1>
+                    <span class="text-primary job-span">(Laravel Developer)</span>
                     <div class="subheading mb-5">
                         179 Santan St. San Roque II Brgy. Bagong Pag-asa, Q.C.
                         <a href="mailto:name@email.com">shaikram02@gmail.com</a>
                     </div>
-                    <p class="lead mb-5">
-                        
-                    </p>
+                    <div class="subheading mb-5">
+                        Portfolio: 
+                        <a href="http://shaikram.epizy.com/">http://shaikram.epizy.com/</a>
+                    </div>
+                   
                     <div class="social-icons">
                         <a class="social-icon" href="www.linkedin.com/in/shaikramjrdev"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/shaikram"><i class="fab fa-github"></i></a>
@@ -74,7 +61,28 @@
                             <h3 class="mb-0">San Francisco High School</h3>
                             <div class="subheading mb-3">T.L.E. - ICT</div>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">June 2009 - March 20015</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2009 - March 2015</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">Bagong Pag-asa Elementary School</h3>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">June 2003 - March 2008</span></div>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Learning & Development-->
+            <section class="resume-section" id="education">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Learning and Development(L&D) Interventions / Trainings Attended</h2>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <h3 class="mb-0">KodeGo Bootcamp</h3>
+                            <div class="subheading mb-3">Full Stack Web Development</div>
+                            <div>Batch: WD24P</div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">September 30, 2022 - Present</span></div>
                     </div>
                 </div>
             </section>
@@ -121,14 +129,17 @@
             <section class="resume-section" id="interests">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Interests</h2>
-                    <p>Apart from being a web developer, I enjoy most of my time being having fun with friends and playing music with my guitar to jam with them.</p>
+                    <p>Apart from being a web developer, I enjoy some of my time having fun with friends and playing music with my guitar to jam with them.</p>
                     <p class="mb-0">I spend a large amount of my free time exploring the latest technology advancements in the back-end or even full stack web development world.</p>
                 </div>
             </section>
             <hr class="m-0" />
         </div>
+        <!-- Font Awesome icons (free version)-->
+         <script src="js/all.js" crossorigin="anonymous"></script>
         <!-- Bootstrap core JS-->
         <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
