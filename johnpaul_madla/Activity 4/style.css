@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(54, 54, 68);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: rgb(0, 0, 0);
+    margin: 50px;
+
+
+}
+.container .left_side {
+    position: relative;
+    background: rgb(82, 82, 179);
+    padding: 40px;
+
+}
+.container .right_side  {
+    position: relative;
+    background: rgb(255, 255, 255);
+    padding: 40px;
+
+}
+
+
+.about {
+    margin-bottom:50px;
+}
+
+.about:last-child {
+    margin-bottom: 0;
+}
+
+.title2 {
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.p {
+    
+    
+}
+
+.profileText {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom:2px rgb(252, 252, 252);
+}
+
+.profileText .imgBx {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+
+
+}
+
+.profileText .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.profileText h2 {
+    color: rgb(255, 255, 255);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+
+
+}
+.profileText h4 {
+    color: rgb(255, 255, 255);
+}
+
+
+.contactinfo {
+    padding-top: 40px;
+
+}
+.title {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-weight: 1000;
+    letter-spacing: 6px;
+    margin-bottom: 30px;
+}
+
+
+.contactinfo ul li {
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+
+}
+
+.contactinfo ul li .icon {
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: black;
+}
+
+.contactinfo ul li span {
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+
+
+}
+.contactinfo.education li {
+    margin-bottom: 15px;
+}
+
+.contactinfo.education h5 {
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    font-weight: 500;
+    padding-top: 15px;
+
+}
+.contactinfo.education h4:nth-child(2) {
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    font-weight: 600;
+   
+}
+.contactinfo.education h4 {
+    letter-spacing: 2px;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+}
+
+.about .box {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company {
+    min-width: 150px;
+
+
+}
+.about .box .year_company h5 {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+.about .box .text h4 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+   
+}
+
+.about .box .text p {
+    color: rgb(0, 0, 0);
+    padding-top: 10px;
+}
+
+.skills .box {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+}
+
+.skills .box h4 {
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+
+}
+
+.skills .box  .percent {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: rgba(60, 78, 95, 0.438);
+}
+
+.skills .box  .percent div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background:  rgb(66, 24, 24);
+
+}
+
+
+
+
