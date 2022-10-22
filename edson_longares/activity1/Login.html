@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>PROFILE LOGIN</title>
     <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
@@ -9,7 +8,6 @@
             background-color: rgb(248, 246, 246);
             height: 500px;
         }
-
         form {
             background-color: rgb(102, 100, 100);
             position: absolute;
@@ -64,7 +62,7 @@
                     </table>
                     <div>
                         <button onclick="checker()"
-                        style="width: 260px; height: 30px; background-color: rgb(161, 165, 164); border:2px solid rgb(88, 88, 88);">LOGIN</button>
+                            style="width: 260px; height: 30px; background-color: rgb(161, 165, 164); border:2px solid rgb(88, 88, 88);">LOGIN</button>
                     </div>
                     <div>
                         <span> Forget Username/Password</span>
@@ -74,15 +72,13 @@
             </form>
         </div>
     </center>
-
 </body>
 <script>
     function checker() {
         var user1 = document.getElementById('userID');
         var pass1 = document.getElementById('passID');
         var dUser = "onniKodego";
-	    var dPass = "abc123";
-
+        var dPass = "abc123";
         if (user1.value == dUser && pass1.value == dPass) {
             alert("Login Success!");
         } else if (user1.value == dUser && pass1.value !== dPass) {
@@ -94,5 +90,4 @@
         }
     }
 </script>
-
 </html>
