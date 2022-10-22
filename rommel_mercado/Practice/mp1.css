@@ -1,0 +1,40 @@
+.whatido,
+.websitedesign,
+.websitedevelopment,
+.websitemaintenance {
+    text-align: center;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+.footer {
+    background-color: black;
+}
+
+body {
+    width: 100%;
+    margin: auto;
+}
+
+.footername {
+    font-size: xx-small;
+}
+
+.adjustpadding {
+    padding-top: 10px;
+    padding-bottom: 10-px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+.backgroundcolorheading {
+    background-color: none;
+    padding: auto;
+
+
+}
+
