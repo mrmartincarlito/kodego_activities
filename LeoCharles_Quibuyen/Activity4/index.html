@@ -4,42 +4,44 @@
         <title>MyOnlineResume</title>
     </head>
             <link rel="stylesheet" type="text/css" href="style.css"/>
+            <script src="script.js"></script>
     <body class="body">
-        <img src="leoID.jpg" lengh="100px" width="100px">
-        <h1>Leo Charles T. Quibuyen</h1>
+            <img src="leoID.jpg" lengh="100px" width="100px">
+            <h1>Leo Charles T. Quibuyen</h1>
                 <p><i>Freelancer</i></p>
                 <p>+63-9917421279</p>
-                <p> Email:<a href="https://www.gmail.com">chryslee18@gmail.com</a></p>
+                <p> Email:<a href="mailto:chryslee18@gmail.com">chryslee18@gmail.com</a></p>
 <br>
-            <div class="tab">
-                <button class="tablinks" onclick="open(event, 'education')" id="defaultOpen">EDUCATIONAL ATTAINMENT</button>
-                <button class="tablinks" onclick="open(event, 'work')">WORK EXPERIENCE</button>
-                <button class="tablinks" onclick="open(event, 'training')">TRAININGS AND SEMINARS</button>
+        <div class="tab">
+            <button class="tablinks" onclick="_tabName(event, 'educ')">Educational Attainment</button>
+            <button class="tablinks" onclick="_tabName(event, 'work')">Work Experiences</button>
+            <button class="tablinks" onclick="_tabName(event, 'sem')">Trainings And Seminars</button>
+        </div>
+
+            <div id="educ" class="tabcontent">
+                    <p><ul>
+                        <li>Tertiary 
+                            <ul>
+                                <li>Fulbright College - Bachelor of Science in Computer Engineering (Undergraduate)</li>
+                            </ul>
+                                          </li>
+        <br>
+                        <li>Secondary
+                            <ul>
+                                <li>Puerto Pricesa Shool of Arts and Trade</li>
+                            </ul>
+                        </li>
+        <br>
+                        <li>Primary
+                            <ul> 
+                                <li>Datu Guibar Memorial Pilot Central School</li>
+                            </ul>
+                                </li>
+                            </ul></p>
             </div>
-
-                <div id="education" class="tabcontent">
-                    <h2>EDUCATIONAL ATTAINMENT</h2>
-                    <ul>
-                            <li>Tertiary 
-                                <ul>
-                                    <li>Fulbright College - Bachelor of Science in Computer Engineering (Undergraduate)</li></ul>
-                            </li>
-                        <br>
-                            <li>Secondary
-                                <ul>
-                                    <li>Puerto Pricesa Shool of Arts and Trade</li></ul>
-                            </li>
-                        <br>
-                            <li>Primary
-                                <ul> 
-                                    <li>Datu Guibar Memorial Pilot Central School</li</ul>
-                            </li></ul>
-                    </ul>
-                </div>
-
-                  <div id="work" class="tabcontent">
-                    <h3>WORK EXPERIENCE</h3>
-                    <ul>
+              
+            <div id="work" class="tabcontent">
+                    <p><ul>
                         <li>Security Personel
                             <ul>
                                 <li>NC LANTING SECURITY SPECIALIST AGENCY IN DEPARTMENT OF FOREIGN AFFAIRS
@@ -74,67 +76,74 @@
                                 </li>
                             </ul>
                         </li>
-                    </ul> 
-                  </div>
-                  <div id="training" class="tabcontent">
-                    <h4>TRAININGS AND SEMINARS</h4>
-                <ul>
-                <li>Certificate of Completion in Setting Up computer Networks
-                    <ul>
-                        <li>Type of Learning Development: Technical</li>
-                        <li>Sponsored by: e-TESDA Division/NITESD</li>
-                        <li>Dated: April 19, 2020</li>
-                    </ul>
-                </li>
-                <li>Certificate of Completion in Installing and Configuring Computer System
-                    <ul>
-                        <li>Type of Learning Development: Technical</li>
-                        <li>Sponsored by: e-TESDA Division/NITESD</li>
-                        <li>Dated: April 15, 2020</li>
-                    </ul>
-                </li>
-                <li>Certificate of Completion in Introduction to Configuring Computer System
-                    <ul>
-                        <li>Type of Learning Development: Technical</li>
-                        <li>Sponsored by: e-TESDA Division/NITESD</li>
-                        <li>Dated: April 08, 2020</li>
-                    </ul>
-                </li>
-                <li>Certificate of Completion in Smart Technopreneurship 101
-                    <ul>
-                        <li>Type of Learning Development: Technical</li>
-                        <li>Sponsored by: e-TESDA Division/NITESD</li>
-                        <li>Dated: April 05, 2020</li>
-                    </ul>
-                </li>
-                <li>Gunsafety and Responsible Handling Seminar
-                    <ul>
-                        <li>Type of Learning Development: Skill Training</li>
-                        <li>Sponsored by: AMGSCOR SHOOTING RANGE AND GUN CLUB INC.</li>
-                        <li>Dated: May 09, 2019</li>
-                    </ul>
-                </li>
-                <li>Pistol Markmanship Firing
-                    <ul>
-                        <li>Type of Learning Development: Skill Training</li>
-                        <li>Sponsored by: PNP-REGIONAL CIVIL SECURITY UNIT MIMAROPA</li>
-                        <li>Dated: May 05, 2017</li>
-                    </ul>
-                </li>
-                <li>Gender and Sensitivity Training Program
-                    <ul>
-                        <li>Type of Learning Development: Team Training</li>
-                        <li>Sponsored by: THE FOREIGN SERVICE INSTITUTE</li>
-                        <li>Dated: May 29, 2016</li>
-                    </ul>
-                </li>
-                <li>Gender and Sensitivity Training Program
-                    <ul>
-                        <li>Type of Learning Development: Team Training</li>
-                        <li>Sponsored by: DFA-RCO PUERTO PRINCESA/PALAWAN PRIME MOVERS ADVOCACY COOPERATIVE</li>
-                        <li>Dated: June 07, 2015</li>
-                    </ul>
-                </li>
+                    </ul></p> 
             </div>
+              
+            <div id="sem" class="tabcontent">
+                    <p><ul>
+                        <li>Certificate of Completion in Setting Up computer Networks
+                            <ul>
+                                <li>Type of Learning Development: Technical</li>
+                                <li>Sponsored by: e-TESDA Division/NITESD</li>
+                                <li>Dated: April 19, 2020</li>
+                            </ul>
+                        </li>
+                        <li>Certificate of Completion in Installing and Configuring Computer System
+                            <ul>
+                                <li>Type of Learning Development: Technical</li>
+                                <li>Sponsored by: e-TESDA Division/NITESD</li>
+                                <li>Dated: April 15, 2020</li>
+                            </ul>
+                        </li>
+                        <li>Certificate of Completion in Introduction to Configuring Computer System
+                            <ul>
+                                <li>Type of Learning Development: Technical</li>
+                                <li>Sponsored by: e-TESDA Division/NITESD</li>
+                                <li>Dated: April 08, 2020</li>
+                            </ul>
+                        </li>
+                        <li>Certificate of Completion in Smart Technopreneurship 101
+                            <ul>
+                                <li>Type of Learning Development: Technical</li>
+                                <li>Sponsored by: e-TESDA Division/NITESD</li>
+                                <li>Dated: April 05, 2020</li>
+                            </ul>
+                        </li>
+                        <li>Gunsafety and Responsible Handling Seminar
+                            <ul>
+                                <li>Type of Learning Development: Skill Training</li>
+                                <li>Sponsored by: AMGSCOR SHOOTING RANGE AND GUN CLUB INC.</li>
+                                <li>Dated: May 09, 2019</li>
+                            </ul>
+                        </li>
+                        <li>Pistol Markmanship Firing
+                            <ul>
+                                <li>Type of Learning Development: Skill Training</li>
+                                <li>Sponsored by: PNP-REGIONAL CIVIL SECURITY UNIT MIMAROPA</li>
+                                <li>Dated: May 05, 2017</li>
+                            </ul>
+                        </li>
+                        <li>Gender and Sensitivity Training Program
+                            <ul>
+                                <li>Type of Learning Development: Team Training</li>
+                                <li>Sponsored by: THE FOREIGN SERVICE INSTITUTE</li>
+                                <li>Dated: May 29, 2016</li>
+                            </ul>
+                        </li>
+                        <li>Gender and Sensitivity Training Program
+                            <ul>
+                                <li>Type of Learning Development: Team Training</li>
+                                <li>Sponsored by: DFA-RCO PUERTO PRINCESA/PALAWAN PRIME MOVERS ADVOCACY COOPERATIVE</li>
+                                <li>Dated: June 07, 2015</li>
+                            </ul>
+                        </li>
+                    </ul></p>
+              </div>
+        
+        <div>
+            <h2> About Me</h2>
+                <ul><p>Hello I am Leo Charles Quibuyen, 35 years old currently residing at  Puerto Princesa City.I obtained my Secondary school at Puerto Princesa School of Arts and Trade and pursue my tertiary schools  at Palawan State University, with the degree of Bachelor of Science in Petroleum Engineering. However, given the extreme uncertainties I was transfered to Fulbright College and enrolled for Bachelor of Science in Computer Engineering.</p></ul>
+                <ul><p>I am currently working as a virtual assistant at Island business corporation for almost 8 months, in that time i was able to develop my skills and knowledge in a variety of fields such as basics in web developing.</p></ul>
+        </div>
     </body>
 </html>
