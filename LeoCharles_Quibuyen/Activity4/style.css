@@ -1,14 +1,17 @@
 .body {
-    background-image: url(BG.jpg);
-    color: rgb(0, 0, 0);
-    margin: 100px;
-    margin-top: 50px;
-    margin-bottom: 100px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  background-color:cadetblue
+}
+.card-text {
+  font-size: large;
 }
 
 .tab {
+  padding-left: 35%;
   overflow: hidden;
   border: 1px solid #ccc;
   background-color: #f1f1f1;
@@ -26,7 +29,6 @@
   font-size: 17px;
 }
 
-
 .tab button:hover {
   background-color: #ddd;
 }
@@ -38,8 +40,8 @@
 
 
 .tabcontent {
+  text-align: center;
   display: none;
-  padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
