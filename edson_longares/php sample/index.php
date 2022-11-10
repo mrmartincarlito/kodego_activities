@@ -27,11 +27,9 @@ function checkAccount($username,$password) {
 
 //activity 3
 
-calculateNum("*");
+calculateNum(6,2,"*");
 
-function calculateNum($operator){
-    $num1=6;
-    $num2=2;
+function calculateNum($num1,$num2,$operator){
     $output=0;
     $add="+";
     $minus="-";
@@ -53,4 +51,21 @@ function calculateNum($operator){
     echo $output;
 }
 
+//assignment for loops
+
+oddEven(20);
+function oddEven($x){
+    $sumodd=0;
+    $sumeven=0;
+for ($i=0;$i<$x;$i++){
+    if($i % 2 == 0){
+        $sumeven=$sumeven+$i;
+        }
+    else{
+        $sumodd=$sumodd+$i;   
+    }
+}
+echo "<br>\n" ."The total of all even numbers in ". $x ." is ".$sumeven ."<br>\n";
+echo "The total of all odd numbers in ". $x ." is ".$sumodd ."<br>\n";
+}
 ?>
