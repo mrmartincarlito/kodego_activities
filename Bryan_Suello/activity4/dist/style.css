@@ -18,19 +18,21 @@ nav {
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  padding: 0 16em;
+  padding: 0 10em;
   position: fixed;
   background-color: #00001c;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  z-index: 2;
 }
 nav img {
-  width: 12em;
+  width: 12rem;
 }
 nav ul {
   display: flex;
   justify-content: space-around;
   font-size: 0.9em;
-  width: 50%;
+  width: 70%;
 }
 nav a {
   color: #eacf89;
@@ -89,19 +91,27 @@ nav .burger-menu div {
   font-weight: 600;
 }
 .banner h2 {
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 500;
+  padding: 0.7em 0 0.7em 0;
+  opacity: 0.9;
+}
+.banner h3 {
+  font-size: 0.8em;
+  font-weight: 300;
+  padding-top: 1.2em;
 }
 .banner img {
-  width: 23em;
+  height: 19em;
+  width: 20em;
   border-radius: 50%;
-}
-.banner img:hover {
-  width: 19em;
+  filter: grayscale(95%);
+  margin-top: 1em;
+  z-index: 1;
 }
 .banner .banner-icons i {
-  margin-top: 2em;
-  width: 1.5em;
+  margin-top: 1em;
+  width: 1.2em;
 }
 @media (max-width: 1050px) {
   .banner {
@@ -119,6 +129,7 @@ nav .burger-menu div {
 }
 .about-me img {
   width: 35em;
+  border-radius: 15px;
 }
 .about-me div {
   padding: 1em 0 0 4em;
@@ -135,6 +146,7 @@ nav .burger-menu div {
   margin-top: 1em;
   text-align: justify;
   text-justify: inter-word;
+  padding-top: 0.6em;
 }
 @media (max-width: 1150px) {
   .about-me {
@@ -165,6 +177,7 @@ nav .burger-menu div {
   font-size: 0.7em;
   text-align: justify;
   text-justify: inter-word;
+  opacity: 0.8;
 }
 .portfolio div div p,
 .portfolio div div h4 {
@@ -186,8 +199,8 @@ nav .burger-menu div {
   padding: 0.6em;
 }
 .portfolio img:hover {
-  width: 33em;
-  height: 18em;
+  width: 21em;
+  height: 12em;
 }
 @media (max-width: 1150px) {
   .portfolio div img {
@@ -197,12 +210,11 @@ nav .burger-menu div {
 
 .work-education {
   width: 100vw;
-  margin: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #020315;
-  height: 40vh;
+  height: 60vh;
 }
 .work-education h2 {
   margin: 0 0 1em 0;
@@ -218,6 +230,11 @@ nav .burger-menu div {
 }
 .work-education div li {
   list-style: circle;
+  padding-bottom: 1em;
+}
+.work-education .educ {
+  margin-left: 12em;
+  margin-bottom: 7.9em;
 }
 @media (max-width: 1050px) {
   .work-education {
@@ -225,6 +242,33 @@ nav .burger-menu div {
     align-items: center;
     height: fit-content;
   }
+}
+
+.references {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #020315;
+  height: fit-content;
+  padding-bottom: 4em;
+}
+.references h2 {
+  margin: 0 0 1em 0;
+  display: inline-block;
+  padding: 0.3em;
+  border-radius: 20px 20px 20px 0;
+  background-color: #282e3c;
+  font-size: 1.3em;
+}
+.references li {
+  list-style: circle;
+  padding-bottom: 1em;
+}
+.references .number {
+  font-style: italic;
+  opacity: 0.7;
 }
 
 footer {
@@ -246,6 +290,11 @@ footer img {
 }
 footer p {
   font-size: 0.9em;
+}
+footer a,
+footer a:visited {
+  color: #eacf89;
+  opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
