@@ -5,7 +5,7 @@ body {
 }
 
 .pInfo {
-    background-color: rgba(80, 81, 82, 0.85);
+    background-color: #0b0c10;
     font-family: Arial;
     width: 25%;
     height: 1600px;
@@ -13,7 +13,7 @@ body {
     margin-top: 20px;
     margin-left: 40px;
     margin-right: 5px;
-    border: 3px solid rgb(172, 169, 169);
+
 }
 .mypic {
 width: 280px;
@@ -22,11 +22,11 @@ height: 300px;
 .pInfoA {
     padding-top: 3px;
     padding-left: 3px;
-    color: rgb(223, 219, 219);
+    color: #66fcf1;
     margin-top: 10px;
     margin-left: 3px;
     margin-right: 3px;
-    border: 2px solid rgb(94, 255, 255);
+    border: 2px solid #1f2833;
     font-size: 16px;
 }
 
