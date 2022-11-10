@@ -2,11 +2,11 @@
 
 checkOperator("10","6");
 
-function checkOperator($ex,$why) {
+function checkOperator($firstdigit,$seconddigit) {
     $defaultX = 10;  
     $defaultY = 6;
 
-    if ($ex + $why){
+    if ($firstdigit + $seconddigit){
     print $ex + $why;
     }
     else if ($ex - $why){
