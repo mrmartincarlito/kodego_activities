@@ -17,5 +17,5 @@ for ($j = 1; $j <= $n; $j++){
         $y = $y + $j;
     } 
 }
-echo "Total odd numbers is equal to $y.";
+echo "Total odd numbers is equal to $y.</br></br></br>";
 ?>
