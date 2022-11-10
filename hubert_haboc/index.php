@@ -21,7 +21,7 @@ function checkUserPassword ($username, $password) {
 }
 */
 
-calculateNumbers ("10", "20", "*");
+calculateNumbers ("20", "40", "-");
 
 function calculateNumbers ($num1, $num2, $operator) {
 
@@ -35,6 +35,10 @@ function calculateNumbers ($num1, $num2, $operator) {
 
     else if ($operator === "*") {
         echo $num1 * $num2;
+    }
+
+    else if ($operator === "/") {
+        echo $num1 / $num2;
     }
 
     else {
