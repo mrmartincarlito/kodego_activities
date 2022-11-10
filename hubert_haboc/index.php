@@ -21,12 +21,9 @@ function checkUserPassword ($username, $password) {
 }
 */
 
-calculateNumbers ("/");
+calculateNumbers ("10", "20", "*");
 
-function calculateNumbers ($operator) {
-    $num1 = "10";
-    $num2 = "5";
-
+function calculateNumbers ($num1, $num2, $operator) {
 
     if ($operator === "+") {
         echo $num1 + $num2;
