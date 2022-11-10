@@ -26,12 +26,12 @@ function calculate2Numbers($num1, $num2, $operator){
         $quot = $num1 / $num2;
         echo  "quotient = ", $quot;
      }else{
-        echo "Operation not found";
+        echo "Operation not found = ", $operator;
      }
 
 }
 
-calculate2Numbers(1,2,"*");
+calculate2Numbers(1,2,"*ss");
 
 
 
