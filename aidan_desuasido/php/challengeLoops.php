@@ -73,7 +73,6 @@ function newProduct($x){
  }
 
  //printAllOddToAGiven(100);
-
  //Challenge #4
  //Create a function to compute for the sum of all even and all odd numbers
  //from 1 to a positive number;
@@ -81,16 +80,16 @@ function newProduct($x){
  function computeSumOfAllOddEvenNumbersToAGivenNumber($number){
         $totalOdd = 0;
         $totalEven = 0;
-        echo " 1 to given (+) number " . $number . "\n";
+        echo "Sum of all even and all odd numbers from 1 to given (+) number : " . $number . "\n";
         for($i=1;$i<=$number;$i++){
             if($i % 2 == 0){
                $totalEven+=$i; 
-               echo " Number # $i is Even : Sum Total Even --> $i + ", $totalEven-$i, " = $totalEven \n";  
+               echo " Number # $i is Even : Total Even --> $i + sum(", $totalEven-$i, ") = $totalEven \n";  
             } 
             else 
             {
                  $totalOdd+=$i;
-                 echo " Number # $i is Odd  : Sum Total Odd  --> $i + ", $totalOdd-$i, " = $totalOdd \n";  
+                 echo " Number # $i is Odd  : Total Odd  --> $i + sum(", $totalOdd-$i, ") = $totalOdd \n";  
             }
         }
         
