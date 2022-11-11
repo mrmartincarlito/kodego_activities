@@ -8,7 +8,7 @@ for ($i=1; $i<=$x; $i++) {
       $evenSum = $evenSum + $i;
     } 
   }
- echo "Total: $evenSum" . "\n"; 
+ echo "Total Even: $evenSum" . "\n\n"; 
 
 
 for ($i=1; $i<=$x; $i++) {
@@ -17,5 +17,5 @@ for ($i=1; $i<=$x; $i++) {
     $oddSum = $oddSum + $i;
     }
   }
-  echo "Total: $oddSum";
+  echo "Total Odd: $oddSum";
 ?>
