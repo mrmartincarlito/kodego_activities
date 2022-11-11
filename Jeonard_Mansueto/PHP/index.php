@@ -1,21 +1,21 @@
 <?php
 
 
-checkuserpass("jeonard","saviench123");
+checkUserpass("jeonards","saviench123");
 
-function checkuserpass($user,$password) {
-    $user="jeonard";
-    $password="saviench123";
+function checkUserpass($user,$password) {
+    $defaultuser="jeonard";
+    $defaultpassword="saviench123";
 
-    if ($user==="jeonard" && $password==="saviench123"){
+    if ($user===$defaultuser && $password===$defaultpassword){
     echo "Succesfully login ". ucfirst($user). " Mansueto";
 } 
-elseif ($user==="jeonard" && $password!=="saviench123"){
+elseif ($user===$defaultuser && $password!==$defaultpassword){
     echo "Password does not match! ";
     errorpass( "Remember your Password");
 
 }
-    elseif ($user!=="jeonard" && $password==="saviench123"){
+    elseif ($user!==$defaultuser && $password===$defaultpassword){
       echo "username does not match! ";
       greethello("remember your username");
 }
@@ -26,7 +26,7 @@ else {
 }
 }
 
-function greethello($name){
+function greetHello($name){
     echo "Please ".ucfirst($name);
 }
 
@@ -38,35 +38,110 @@ function errorpass($error){
 }
 
 
-
+echo "<br>";
 
 $num1 = 8;
 $num2 = 4;
-operation(8,4);
-function operation($num1,$num2){
+operation(8,4,"+");
+function operation($num1,$num2,$operation){
 $a= $num1 +  $num2;
 $s= $num1 -  $num2;
 $m= $num1 *  $num2;
 $d= $num1 /  $num2;
-$operation="divide";
 
-if($operation=="add"){
-echo " Answer is ". $a;
+if($operation=="+"){
+echo " Sum is ". $a;
 }
-elseif ($operation=="subtract"){
-    echo " Answer is ". $s;
+elseif ($operation=="-"){
+    echo " Difference is ". $s;
 }
-elseif ($operation=="multiply"){
-    echo " Answer is ". $m;
+elseif ($operation=="*"){
+    echo " Product is ". $m;
 }
-elseif ($operation=="divide"){
-    echo " Answer is ". $d;
+elseif ($operation=="-"){
+    echo " Quotient is ". $d;
 }
 else{
     echo " Operation not found";
 }
 
 }
+
+
+echo "<br>";
+
+$x=3;
+for ($i=0; $i<5; $i++ ) {
+ $x = $x * $i;
+    
+}
+echo $x;
+
+
+echo "<br>";
+
+$x=100;
+for($i=0;$i<5;$i++ ){
+    if($i==0) {
+        continue;
+    }
+    $x=$x/$i;
+}
+echo "Quotient is: $x";
+
+
+echo "<br>";
+
+
+even(20);
+function even($x){
+    for($i=1; $i<= $x; $i++) {
+    if ($i % 2 == 0){
+     echo "$i <br>" ;   }
+}
+}
+
+echo "<br>";
+
+odd(16);
+function odd($x){
+    for($i=1; $i<= $x; $i++) {
+    if ($i % 2 != 0){
+     echo "$i <br>" ;   }
+}
+}
+
+
+echo "<br>";
+
+
+$x=1000;
+addevenodd($x);
+function addevenodd($x) {
+    $even=0;
+    $odd=0;
+    for($i=1; $i<=$x; $i++) {
+        if ($i % 2 == 0){
+         $even=$even + $i ;   }
+    
+         else {
+            $odd=$odd + $i;
+         }
+    }
+    echo "sum of all even: ". number_format($even, );
+    echo "<br>";
+    echo "sum of all odd: ". number_format($odd, );
+
+}
+    
+
+
+
+
+
+
+
+
 
 
 ?>
