@@ -19,7 +19,7 @@ function checkUserPassword ($username, $password) {
         echo "Account does not exist";
     }
 }
-*/
+
 
 calculateNumbers ("20", "40", "-");
 
@@ -46,5 +46,36 @@ function calculateNumbers ($num1, $num2, $operator) {
     }
     
 }
+
+$x = 3
+
+for ($i = 0, $i < 5, $i++) {
+    $x = $x * $i;
+}
+
+*/
+
+<?php
+
+$x = 20;
+$sum = 0;
+for ($i=1; $i<=$x; $i++) {
+    if ($i % 2 === 0) {
+      echo $i ."\n";
+      $sum = $sum + $i;
+    } 
+  }
+ echo "Total: $sum" . "\n"; 
+
+
+for ($i=1; $i<=$x; $i++) {
+    if ($i % 2 !== 0) {
+    echo $i ."\n";
+    $sum = $sum + $i;
+    }
+  }
+  echo "Total: $sum";
+
+?>
 
 ?>
