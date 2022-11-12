@@ -125,7 +125,7 @@ $groceries = array(
     ),
     array(
         "desc"=>"Item3",
-         "qty"=> 1,
+         "qty"=> 2,
          "cost"=> 20,
     ),
 );
