@@ -40,7 +40,6 @@ foreach($groceryItems as $item => $prop){
     $strQTY_DESC = "(" . $prop["QTY"] . ")" .  $item . "    ";
     $strTotal = $prop["COST"]*$prop["QTY"];
     $overallTotal += $strTotal;
-    $costSpace = strlen($strTotal) - strlen($prop["COST"]);
     $cost = $prop["COST"];
     echo $strQTY_DESC;
     printf("    %-4s",$cost);
