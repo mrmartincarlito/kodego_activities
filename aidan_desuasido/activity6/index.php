@@ -70,7 +70,7 @@ $groceryItems = array(
     )
 );
 
-$GLOBALS['subTotalAmountNum'] = 0;
+$GLOBALS['subTotalAmount'] = 0;
 $GLOBALS['totalAmountSale'] = 0;
 
 function testPrintProduct($groceryItems) {
@@ -105,7 +105,7 @@ printLine();
 printHeader(); 
 printLine();
 printLabels();
-//combine ProductsSoldByPiece & ProductsSoldInBulk for any order
+//combine ProductsSoldByPiece & ProductsSoldInBulk for any Item order
 //calculateProductsSoldByPiece($groceryItems);
 //calculateProductsSoldInBulk($groceryItems);
 calculateProductsSold($groceryItems);
@@ -128,7 +128,7 @@ function calculateProductsSold($groceryItems)
 
             echo  $value["qty"] . "PCS \t" . sprintf('% -10s', $value["name"])
             . " @ " .  sprintf('% -10s',number_format($value["price"],2)) . " " . sprintf('% 10s',$amount) . "\n";
-            $GLOBALS['subTotalAmountNum'] = $GLOBALS['subTotalAmountNum'] + $amount;
+            $GLOBALS['subTotalAmount'] = $GLOBALS['subTotalAmount'] + $amount;
         }
         elseif ($value["weight"])
         {
@@ -136,7 +136,7 @@ function calculateProductsSold($groceryItems)
 
             echo  $value["qty"] . $value["unit"] . " \t" . sprintf('% -10s', $value["name"])
             . " @ " .  sprintf('% -10s',number_format($value["price"],2)) . " " . sprintf('% 10s',$amount) . "\n";
-            $GLOBALS['subTotalAmountNum'] = $GLOBALS['subTotalAmountNum'] + $amount;
+            $GLOBALS['subTotalAmount'] = $GLOBALS['subTotalAmount'] + $amount;
         }
     }
 }
@@ -150,7 +150,7 @@ function calculateProductsSoldByPiece($groceryItems)
 
             echo  $value["qty"] . "PCS \t" . sprintf('% -10s', $value["name"])
             . " @ " .  number_format($value["price"],2) . " \t\t " . sprintf('% -5s',$amount) . "\n";
-            $GLOBALS['subTotalAmountNum'] = $GLOBALS['subTotalAmountNum'] + $amount;
+            $GLOBALS['subTotalAmount'] = $GLOBALS['subTotalAmount'] + $amount;
         }
     }
 }
@@ -163,7 +163,7 @@ function calculateProductsSoldInBulk($groceryItems)
 
             echo  $value["qty"] . $value["unit"] . " \t" . sprintf('% -10s', $value["name"])
             . " @ " .  number_format($value["price"],2) . " \t\t " . sprintf('% -5s',$amount) . "\n";
-            $GLOBALS['subTotalAmountNum'] = $GLOBALS['subTotalAmountNum'] + $amount;
+            $GLOBALS['subTotalAmount'] = $GLOBALS['subTotalAmount'] + $amount;
         }
     }
 }
@@ -202,13 +202,13 @@ function calculateTotalItemsCountAndSubTotal($groceryItems){
         }
     }
     echo "SUB TOTAL: \t " . sprintf('% 5s',$count) 
-        . " ITEMS(S) \t\t" . number_format($GLOBALS['subTotalAmountNum'], 2); 
+        . " ITEMS(S) \t\t" . number_format($GLOBALS['subTotalAmount'], 2); 
     return  $count; 
 } 
 
 
 function calculateTotalAmountDiscount() { 
-    $amount = $GLOBALS['subTotalAmountNum'] - $GLOBALS['totalAmountSale'];
+    $amount = $GLOBALS['subTotalAmount'] - $GLOBALS['totalAmountSale'];
     echo "\nTotal:\t\t\t\t\t\t\t\t" . number_format($amount, 2) . "\n";
 }
 
