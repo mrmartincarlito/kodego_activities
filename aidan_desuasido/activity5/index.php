@@ -23,7 +23,6 @@
 // Ferdinand Marcos Jr
 // -->
 
-
 echo "Presidents: \n";
 echo "\t 1.gLorIa mAcaPagal ArrOyo \n";
 echo "\t 2.rOdrigo rOa Duterte \n";
@@ -57,9 +56,6 @@ $electedPresidents = array("Gloria Macapagal Arroyo",
 
 function returnPresidentProperNames ($presidentCandidates, $electedPresidents ){
 
-    //foreach($presidentCandidates as $presidentName){
-    //    echo "Proper Case " . toUpperCaseFirstLetter($presidentName) . " \n ";
-    //}
     for($i=0; $i < count($presidentCandidates); $i++){
         $condition = isPresident($electedPresidents, $presidentCandidates[$i]);
         if($condition){
@@ -73,13 +69,9 @@ function returnPresidentProperNames ($presidentCandidates, $electedPresidents ){
 function isPresident($electedPresidents, $name){
    
     foreach($electedPresidents as $electedPresident){
-        //echo " Name " . strtolower($name);
-        //echo " --> Elected President Name " . strtolower($electedPresident) . "\n";
-        //$name = str_replace(' ', '', $name);
         $name = preg_replace('/\W/','', $name); //remove non words
         $electedPresident= preg_replace('/\W/','', $electedPresident);
         if(strtolower($name) == strtolower($electedPresident)){
-            //echo "Entered is President " . toUpperCase($name) . "\n";
             return true;
         }
     }
@@ -89,11 +81,6 @@ function isPresident($electedPresidents, $name){
 function toUpperCaseFirstLetter($inputName){
     $initialNameFormat = ucwords(strtolower($inputName));
     $nameData = preg_split('/\s+/', $initialNameFormat ); //split into an array space as separator
-    //foreach($nameData as $name_split){
-    //    echo " name splited " . $name_split . "\n";
-    //}
-    //echo " Last Name / Suffix " . $nameData[count($nameData) - 1] . "\n";
-    //Format Suffix name III, Jr
     $lastName = $nameData[count($nameData) - 1];
     $nameData[count($nameData) - 1] = formatSuffixNumber($lastName);
     $newName = implode(" ", $nameData);
