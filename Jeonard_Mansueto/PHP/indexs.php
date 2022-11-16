@@ -183,7 +183,7 @@ echo "<br>";
 
 $set1 = array(10, 17, 107, 12, 2);
 $set2 = array(10, 8, 107, 0, 4);
-for ($i = 0; $i <count($set1); $i++) {
+for ($i = 0; $i==($set1); $i++) {
     if ($set1[$i] !== $set2[$i]) {
         echo $set1[$i]."<br>";
     }
