@@ -1,0 +1,22 @@
+
+body {
+    background-color: lightblue;
+    align-items: center;
+    align-self: center;
+    font-style: italic;
+    line-break: auto;
+    margin-top: 0mm;
+    page-break-before: auto;
+    margin: 0 auto;
+    font-display: block;
+    text-align: justify;
+    -ms-text-kashida-space: 0%;
+}
+.my-photo{
+    margin: 0 auto;
+    width: 250px;
+    display: block;
+    margin: 0px auto;   
+
+
+}
