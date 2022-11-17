@@ -62,7 +62,7 @@ $phPresidents=array(
 properName($phPresidents);
 
 function properName($listPresidents) {
-    $i=0;
+
     foreach($listPresidents as $president){
         if ($president["post"]=="President"){
             $name=strtolower($president["fName"])." " .strtolower($president["mName"])." " .strtolower($president["lName"])." ".$president["suffix"];
