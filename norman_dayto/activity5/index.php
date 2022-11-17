@@ -18,13 +18,17 @@ $namesPresidents = array (
   "fiDel v Ramos",
   "fErdinanD mArcOs Jr."
 );
-  
-foreach ($namesAll as $nameAll) {
-  foreach ($namesPresidents as $namePresident) {
-    if ($nameAll == $namePresident) {
-      $nameAll = strtolower($nameAll);
-      echo ucwords($nameAll) . "\n";
+
+function philippinePresidents ($namesAll, $namesPresidents) {
+  foreach ($namesAll as $nameAll) {
+    foreach ($namesPresidents as $namePresident) {
+      if ($nameAll == $namePresident) {
+        $nameAll = strtolower($nameAll);
+        echo ucwords($nameAll) . "\n";
+      }
     }
   }
 }
+
+philippinePresidents ($namesAll, $namesPresidents);
 ?>
