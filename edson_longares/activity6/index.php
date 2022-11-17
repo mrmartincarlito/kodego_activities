@@ -86,12 +86,18 @@ $customerBasket=array(
     Array(
             "sku"=>"0000006",
             "qty"=>5
+        ), 
+        Array(
+            "sku"=>"0000002",
+            "qty"=>1
         ),  
     );
 
-checkOutCounter($merchandiselist,$customerBasket);
+$payment=1000;
 
-function checkOutCounter($merchandise,$basket){
+checkOutCounter($merchandiselist,$customerBasket,$payment);
+
+function checkOutCounter($merchandise,$basket,$cash){
 echo"------------------------------------------------------------------------------------ <br>\n";
 echo"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
 echo"&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp";
@@ -109,7 +115,7 @@ $discountTotal=0;
 $itemCount=0;
     foreach($basket as $item){
         $amountTotal=0;
-       
+        $change=0;
         foreach($merchandise as $product){
             if ($item["sku"]===$product["sku"]){
                 $amountTotal=$item["qty"]*$product["price"];
@@ -117,12 +123,12 @@ $itemCount=0;
                 echo '<tr>';
 
                 echo '<td>';
-                echo $item["qty"];
+                echo $item["qty"]." ";
                 echo $product["unit"];
                 echo '</td>';
 
                 echo '<td>';
-                echo $product["sku"];
+                echo $product["sku"] ."-";
                 echo $product["description"]."@";
                 echo number_format($product["price"],2);
                 echo '</td>';
@@ -168,7 +174,7 @@ $itemCount=0;
     }
     echo '<tr>';
     echo '<td>';
-    echo "------------------------";
+    echo "---------------------";
     echo '</td>';
     echo '<td>';
     echo "--------------------------------------";
@@ -192,7 +198,7 @@ $itemCount=0;
 
     echo '<tr>';
     echo '<td>';
-    echo "Discounted Amount:" ;
+    echo "Discounted Amt:" ;
     echo '</td>';
     echo '<td>';
     echo " ";
@@ -230,7 +236,43 @@ $itemCount=0;
 
     echo '<tr>';
     echo '<td>';
-    echo "------------------------";
+    echo "-";
+    echo '</td>';
+    echo '<td>';
+    echo "-";
+    echo '</td>';
+    echo '<td>';
+    echo   "-";
+    echo '</td>';
+    echo '</tr>';
+
+    echo '<tr>';
+    echo '<td>';
+    echo "CASH PAYMENT";
+    echo '</td>';
+    echo '<td>';
+    echo " ";
+    echo '</td>';
+    echo '<td>';
+    echo  number_format($cash,2);
+    echo '</td>';
+    echo '</tr>';
+    $change=$cash-$amountOverall;
+    echo '<tr>';
+    echo '<td>';
+    echo "CHANGE";
+    echo '</td>';
+    echo '<td>';
+    echo " ";
+    echo '</td>';
+    echo '<td>';
+    echo number_format($change,2);
+    echo '</td>';
+    echo '</tr>';
+
+    echo '<tr>';
+    echo '<td>';
+    echo "---------------------";
     echo '</td>';
     echo '<td>';
     echo "--------------------------------------";
@@ -257,7 +299,7 @@ $itemCount=0;
     echo "DATE/TIME:";
     echo '</td>';
     echo '<td>';
-    echo  date("Y.m.d h:i:sa");
+    echo  date("Y.m.d|h:i:sa");
     echo '</td>';
     echo '<td>';
     echo  " ";
@@ -293,7 +335,7 @@ $itemCount=0;
     echo " ";
     echo '</td>';
     echo '<td>';
-    echo "";
+    echo " ";
     echo '</td>';
     echo '<td>';
     echo   " ";
@@ -323,19 +365,10 @@ $itemCount=0;
     echo '</td>';
     echo '</tr>';
 
-    echo '<tr>';
-    echo '<td>';
-    echo "==============";
-    echo '</td>';
-    echo '<td>';
-    echo "=======================";
-    echo '</td>';
-    echo '<td>';
-    echo "============";
-    echo '</td>';
-    echo '</tr>';
-
    echo '</table>';
+   
+  
+   echo "================================================== <br>";
 
    echo "THIS INVOICE/RECEIPT SHALL BE VALID FOR FIVE(5) YEARS";
 }
