@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My First Login Page</title>
+        <style>
+            table {
+                background-color: black;
+                color: azure;
+            }
+            td { 
+                padding-top: 10px;
+                padding-right: 10px;
+                padding-bottom: 15px;
+                padding-left: 10px;
+            }
+            button {
+                background-color: cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="position: absolute;
+                left: 40vw;
+                top: 100px;" >
+        <table style="">
+             <tr>
+                <td colspan="3" align="center"><span> ** LOGIN **</span></td>
+             </tr>
+             <tr>
+               <td align="left">Name</td>
+                <td style="width: 10px;">&nbsp;</td>
+               <td><input id="username" type="text"></td>
+             </tr>
+            <tr>
+                <td align="left">Password</td>
+                <td style="width: 10px;">&nbsp;</td>
+                <td><input id="password" type="password"></td>
+            </tr>
+            <tr>
+                <td align="center" colspan="3">
+                    <button type="button" onclick="validateLogin();">Submit</button>
+                </td>
+            </tr>
+        </table>
+        <div style="position: relative;
+            top: 40px;
+            text-align: center;">
+            The Correct Name = Admin, Password = 1234
+        </div>
+        </div>
+    </body>
+</html>
+<script type="text/javascript">
+function validateLogin(){
+    
+    const userNamePass = "Admin";
+    const passwordPass = "1234";
+
+    let userName = document.getElementById("username").value;    
+    let passWord = document.getElementById("password").value;
+    let successMsg = `Success ${userName}!`; 
+    let failMsg = `Login Denied for ${userName}!`;
+    
+    if(userNamePass == userName && passwordPass == passWord){
+        alert(successMsg);
+    }else{
+        alert(failMsg);
+        document.getElementById("username").value = "";
+        document.getElementById("password").value = "";
+    }
+
+}
+
+</script>
