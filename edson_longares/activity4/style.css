@@ -1,0 +1,96 @@
+body {
+    background-color: rgb(247, 241, 241);
+    font-family: arial;
+   
+}
+
+.pInfo {
+    background-color: #0b0c10;
+    font-family: Arial;
+    width: 25%;
+    height: 1600px;
+    float:left;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 5px;
+
+}
+.mypic {
+width: 280px;
+height: 300px;
+}
+.pInfoA {
+    padding-top: 3px;
+    padding-left: 3px;
+    color: #66fcf1;
+    margin-top: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 2px solid #1f2833;
+    font-size: 16px;
+}
+
+.dInfo {
+    background-color: rgba(128, 125, 125, 0.90);
+    font-family: Arial;
+    width: 68%;
+    height: 1600px;
+    float:right;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 40px;
+    background-image: url('bgimage.jpg');
+}
+
+.dName{
+    background-color: rgba(241, 241, 188, 0.904);
+    height:auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.infoXP {
+    padding:5px;
+    font-family: Arial;
+    color:rgb(19, 18, 18);
+    background-color: rgba(177, 241, 222, 0.75);
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.infoEduc {
+    padding:5px;
+    font-family: Arial;
+    color:rgb(19, 18, 18);
+    background-color: rgba(177, 241, 222, 0.75);
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.infoSem{
+    padding:5px;
+    font-family: Arial;
+    color:rgb(19, 18, 18);
+    background-color: rgba(177, 241, 222, 0.75);
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sign{
+    background-color: rgba(250, 235, 215, 0.884);
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    text-align: right;
+    margin-top: 200px;
+    padding-right: 50px;
+}
+.myquote {
+    font-size: 24px;
+    color:rgb(12, 211, 151);
+    background-color: rgb(105, 103, 103);
+    padding: 5px;
+    margin-top: 10px;
+}
+.listA{
+    list-style: none;
+}
