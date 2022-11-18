@@ -9,16 +9,16 @@
     <link href="bootstrap-5.2.2/dist/css/bootstrap-utilities.min.css" rel="stylesheet">
     <link href="" rel="stylesheet">
     <title>My Resume</title>
-    <link href="mystyle.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
 </head>
 
-<body>
+<body onload="changeMenu()">
 
     <div class="my-header">
         <div class="main">
             <div class="frame"> </div>
             <div class="picSlide">
-                <img src="myPic.jpg" />
+                <img src="photos/myPhoto.jpg" />
             </div>
         </div>
         <div class="my-name">
@@ -28,14 +28,252 @@
             <p class="quote">"Whatever Your Mind Can Concieve and Believe, It Can Achieve."</p>
             <p class="quote"> -Napoleon Hill</p>
         </div>
-        <div>
 
+        <div class="menu">
+            <div class="container">
+                <div class="topnav">
+                    <a onclick="changeMenu('about')">ABOUT ME</a>
+                    <a onclick="changeMenu('work')">WORK BACKGROUND</a>
+                    <a onclick="changeMenu('educ')">EDUCATION</a>
+                    <a onclick="changeMenu('training')">TRAININGS</a>
+                    <a onclick="changeMenu('reference')">REFERENCES</a>
+                </div>
+            </div>
         </div>
+
+
     </div>
 
     <div class="my-details">
-        <p></p>
+
+        <div class="info-holder">
+            <div id="contactInfo">
+                <h5><img src="photos/contact.png" height="50px" />Contact Information</h5>
+                <hr>
+                <ul class="listA">
+                    <li>
+                        <h6>Phone</h6>
+                    </li>
+                    <li>(+63)956-346-7111</li>
+                    <br>
+                    <li>
+                        <h6>E-mail</h6>
+                    </li>
+                    <li>one.longares@gmail.com</li>
+                    <br>
+                    <li>
+                        <h6>Social Media</h6>
+                    </li>
+                    <li><a href="https:\\facebok.com/edzonlongares"><img src="photos/fblogo.png" height="40px" /></a></li>
+                </ul>
+            </div>
+
+            <div id="workInfo">
+                <h5><img src="photos/work.png" height="50px" /><b>Work Experiences</b></h5>
+                <hr>
+                <table>
+                    <tr><b>
+                            <td><b>2015 - Present </b></td>
+                            <td>|</td>
+                            <td><b>Admin Officer </b></td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>|</td>
+                        <td>Robisons Retail Holdings Inc</td></b>
+                    </tr>
+                    <tr>
+                        <td>------</td>
+                    </tr>
+                    <tr>
+                        <td><b>2012-2015</b></td>
+                        <td>|</td>
+                        <td><b>Receving Supervisor</b></td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>|</td>
+                        <td>Robisons Retail Holdings Inc</td>
+                    </tr>
+
+                    <tr>
+                        <td><b>2010-2012</b></td>
+                        <td>|</td>
+                        <td><b>Receiving Clerk </b></td>
+                    </tr>
+                    <tr>
+                        <td>Company</td>
+                        <td>|</td>
+                        <td>Robisons Retail Holdings Inc</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="educInfo">
+                <h5><img src="photos/educ.png" height="50px" /><b>Educational Background</b></h5>
+                <hr>
+                <table>
+                    <tr>
+                        <td><b>2009</b></td>
+                        <td>|</td>
+                        <td><b>Bachelor of Science in Computer Science</b></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>University of Saint Anthony-Iriga City</td>
+                    </tr>
+                    <tr>
+                        <p></p>
+                    </tr>
+                    <tr>
+                        <td><b>2005</b></td>
+                        <td>|</td>
+                        <td><b>Secondary Education</b></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Malawag High School</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>Barangay Malawag, Nabua, Camarines Sur</td>
+                    </tr>
+                    <tr>
+                        <td><b>2001</b></td>
+                        <td>|</td>
+                        <td><b>Primary School</b></td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>Malawag Elementary School</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td> </td>
+                        <td>Barangay Malawag, Nabua, Camarines Sur</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div id="trainingInfo">
+                <h5><img src="photos/training.png" height="50px" /><b>Training/Seminars</b></h5>
+                <hr>
+                <ul class="listA">
+                    <li>
+                        <h6><b>Basic Occupational Safety and Health Training(BOSH)</b></h6>
+                    </li>
+                    <li>PEME Consultancy, Inc. </li>
+                    <li>GBF Technical Training Center, Litton Mills Compound, Amang Rodriguez Avenue, Pasig City</li>
+                    <li>February 06-09, 2018</li>
+                    <br />
+                    <li>
+                        <h6><b>40 hours Basic Pollution Control Officer Training</b> </h6>
+                    </li>
+                    <li>Environmental Training Institute (ETI)</li>
+                    <li>GBF Technical Training Center, Litton Mills Compound, Amang Rodriguez Avenue, Pasig City</li>
+                    <li>February 19-22, 2019</li>
+                    <br />
+                    <li>
+                        <h6><b>Philippine Red Cross First Aid Training</b></h6>
+                    </li>
+                    <li>110 E Roddriguez Jr. Ave Libis, Quezon City </li>
+                    <li>October 23-24, 2018</li>
+
+                </ul>
+            </div>
+            <div id="referenceInfo">
+                <h5><img src="photos/refer.png" height="50px" />Personal References</h5>
+                <hr>
+                <table>
+                    <tr><b>Noel Foloso</b></tr>
+                    <br />
+                    <tr>CitiBank Sales Specialist</tr>
+                    <br />
+                    <tr>Contact Number:0992-622-1940 </tr><br />
+                    <br />
+                    <tr><b>Michelle Dela Cruz</b></tr>
+                    <br />
+                    <tr>Store Manager</tr>
+                    <br />
+                    <tr>Robinsons Department Store</tr>
+                    <br />
+                    <tr>Contact Number: 0998-846-5946</tr>
+                    <br />
+                    <br />
+                    <tr><b>Cherry Ann Sabino</b></tr>
+                    <br />
+                    <tr>Department Head</tr>
+                    <br />
+                    <tr>Robinsons Department Store</tr>
+                    <br />
+                    <tr>Contact Number: 0916-245-8195</tr>
+                </table>
+            </div>
+        </div>
     </div>
+
 </body>
+
+<script>
+    o
+
+    function changeMenu(category) {
+        sessionStorage.setItem("category", category);
+        var catergoryselected = sessionStorage.getItem("category");
+        var c1 = document.getElementById("contactInfo");
+        var c2 = document.getElementById("workInfo");
+        var c3 = document.getElementById("educInfo");
+        var c4 = document.getElementById("trainingInfo");
+        var c5 = document.getElementById("referenceInfo");
+
+        var cA = "about";
+        var cB = "work";
+        var cC = "educ";
+        var cD = "training";
+        var cE = "reference";
+
+        if (catergoryselected == cB) {
+            c1.style.display = "none";
+            c2.style.display = "block";
+            c3.style.display = "none";
+            c4.style.display = "none";
+            c5.style.display = "none";
+        } else if (catergoryselected == cC) {
+            c1.style.display = "none";
+            c2.style.display = "none";
+            c3.style.display = "block";
+            c4.style.display = "none";
+            c5.style.display = "none";
+
+        } else if (catergoryselected == cD) {
+            c1.style.display = "none";
+            c2.style.display = "none";
+            c3.style.display = "none";
+            c4.style.display = "block";
+            c5.style.display = "none";
+
+        } else if (catergoryselected == cE) {
+            c1.style.display = "none";
+            c2.style.display = "none";
+            c3.style.display = "none";
+            c4.style.display = "none";
+            c5.style.display = "block";
+
+        } else {
+            c1.style.display = "block";
+            c2.style.display = "none";
+            c3.style.display = "none";
+            c4.style.display = "none";
+            c5.style.display = "none";
+
+        }
+    }
+
+</script>
+
 
 </html>
