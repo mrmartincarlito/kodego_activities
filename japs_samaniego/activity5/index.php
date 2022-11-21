@@ -1,5 +1,5 @@
 <?php
-	$president = array (
+	$presidents = array (
 	  array(
       "name" => "gLorIa mAcaPagal ArrOyo",
       "position" => "president"
@@ -44,7 +44,7 @@
         if ($president["position"] == "president" ){
         $final = ucwords(strtolower($president["name"]));
         echo $final;
-        echo "\n";
+        echo "<br>";
         }
     }
 ?>
