@@ -20,28 +20,27 @@ Ferdinand Marcos Jr
 
  */
 
-returnProperPresidentNames();
 
-function returnProperPresidentNames() {
+$names = array(
+    "gLorIa mAcaPagal ArrOyo" => "president", 
+    "rOdrigo rOa Duterte" => "president", 
+    "benIgno sImeOn aQuino III" => "president", 
+    "bOng Go" => "honoroble",
+    "lEni RobredO" => "honoroble", 
+    "fiDel v Ramos" => "president",
+    "roBert seNya" => "honoroble",
+    "fErdinanD mArcOs Jr." => "president"
+);
 
-    $names = array(
-        "gLorIa mAcaPagal ArrOyo" => "president", 
-        "rOdrigo rOa Duterte" => "president", 
-        "benIgno sImeOn aQuino III" => "president", 
-        "bOng Go" => "honoroble",
-        "lEni RobredO" => "honoroble", 
-        "fiDel v Ramos" => "president",
-        "roBert seNya" => "honoroble",
-        "fErdinanD mArcOs Jr." => "president"
-    );
+returnProperPresidentNames($names);
+
+function returnProperPresidentNames($names) {
+
+
 
     foreach ($names as $key => $value) {
         if ($value == 'president') {
-                echo ucwords(strtolower($key)). '<br />';
-
-                // if (str_word_count($key) <= 4) {
-                //     echo ucwords(strtolower($key)) . '<br />';
-                // } 
+                echo str_replace("Iii", "III", ucwords(strtolower($key))) . '<br />';
             }
 
     }
