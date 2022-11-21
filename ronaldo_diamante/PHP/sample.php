@@ -44,8 +44,31 @@
 //    echo "--------------------------- <br />";
 //    echo "Over all total : " . $overalltotal;
 
-$x = 1000;
+printSumOfEvenAndOdd(20);
 
-$y = $x > 200;
+function printSumOfEvenAndOdd($num) {
+    $totalEven = 0;
+    for ($i=1; $i <= $num; $i++) {
+        if ($i % 2 == 0){
+            echo "Even number:  $i" . '<br />';
+            $totalEven = $totalEven + $i;
+    }
+}
+echo "The sum of even numbers is: $totalEven";
 
-echo $y;
+}
+
+
+printSumOfEvenAndOdd(20);
+
+function printSumOfEvenAndOdd($num) {
+    $totalEven = 0;
+    for ($i=1; $i <= $num; $i++) {
+        if ($i % 2 == 0){
+            echo "Even number:  $i" . '<br />';
+            $totalEven = $totalEven + $i;
+    }
+}
+echo "The sum of even numbers is: $totalEven";
+
+}
