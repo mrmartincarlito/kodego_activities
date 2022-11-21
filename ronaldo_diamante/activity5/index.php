@@ -37,7 +37,8 @@ function returnProperPresidentNames() {
 
     foreach ($names as $key => $value) {
         if ($value == 'president') {
-                echo ucwords(strtolower($key)). '<br />';
+                echo str_replace("Iii", "III", ucwords(strtolower($key))). '<br />';
+                
 
                 // if (str_word_count($key) <= 4) {
                 //     echo ucwords(strtolower($key)) . '<br />';
