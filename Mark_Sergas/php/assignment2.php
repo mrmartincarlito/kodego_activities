@@ -18,4 +18,5 @@ for ($j = 1; $j <= $n; $j++){
     } 
 }
 echo "Total odd numbers is equal to $y.</br></br></br>";
+
 ?>
