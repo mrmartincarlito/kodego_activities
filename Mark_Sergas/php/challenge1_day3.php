@@ -42,5 +42,4 @@ foreach ($groceries as $grocery) {
 }
 
 echo "---------------------------------------------- </br>";
-echo "Sub Total:  $itemsCounter Items(s)" . "</br>";
-echo "Overall total:" . "&emsp;&emsp;" . "Php" . $overalltotal;
+echo "Over all total : " . $overalltotal;
