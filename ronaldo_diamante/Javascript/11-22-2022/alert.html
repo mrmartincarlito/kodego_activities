@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(77, 77, 77);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <h2>JavaScript Intro</h2>
+
+    <button type="button" onclick="myFunction()">Click Me</button>
+    <hr />
+    <p># This is Event examples</p>
+    <input type="text" onkeydown="onKeyDown()" />
+    <p onmouseover="mouseOver()">Example of onmouseover event.</p>
+    <p onmouseout="mouseOut()">Example of onmouseout event.</p>
+    <hr />
+  </body>
+  <script>
+    function myFunction() {
+      //   document.write(i);
+      document.write("You pressed Click Me!");
+    }
+
+    function mouseOver() {
+      document.write("I am a mouse over");
+    }
+
+    function mouseOut() {
+      document.write("I am a mouse out");
+    }
+
+    function onKeyDown() {
+      //   document.write(i);
+      console.log("Hello, Ronaldo!");
+    }
+  </script>
+</html>

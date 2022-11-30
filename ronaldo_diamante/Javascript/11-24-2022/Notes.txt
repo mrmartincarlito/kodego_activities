@@ -1,0 +1,7 @@
+
+Script Import for jQuery:
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+JSON = JavaScript object notations
+AJAX = Asynchronous JavaScript and XML
+DOM = Document Object Model
