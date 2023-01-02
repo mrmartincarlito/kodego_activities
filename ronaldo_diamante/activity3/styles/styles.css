@@ -1,0 +1,281 @@
+body {
+  background-color: rgb(24, 26, 27);
+  color: rgb(232, 230, 227);
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+body ul,
+ol {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  height: 3rem;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2rem 3rem;
+  position: fixed;
+  background-color: rgb(17, 91, 209);
+  top: 0;
+  left: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  cursor: pointer;
+}
+
+#name {
+  font-weight: 600;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#name:hover {
+  color: rgb(0, 16, 43);
+}
+
+header li {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border-radius: 4px;
+}
+
+header li:hover {
+  background-color: rgb(205, 224, 255);
+  color: black;
+}
+
+main {
+  width: 60%;
+  margin: 8rem auto;
+}
+
+#about-me img {
+  width: 16rem;
+  border-radius: 50%;
+  border: 2px solid blue;
+}
+
+main h2 {
+  font-size: 3rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(45, 153, 255);
+  margin-bottom: 2rem;
+}
+
+#about-me {
+  display: flex;
+  font-size: 1.1rem;
+}
+
+#about-me p {
+  text-align: justify;
+  margin: 0;
+  padding-left: 3rem;
+}
+
+#skills {
+  text-align: center;
+  margin-top: 8rem;
+  font-size: 1.1rem;
+}
+
+#skills span {
+  color: rgb(146, 201, 251);
+}
+
+#skills ul {
+  width: 80%;
+  margin: 1rem auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem 1rem;
+  background-color: aliceblue;
+  border-radius: 0.5rem;
+}
+
+#skills img {
+  width: 4rem;
+  display: inline-block;
+  padding-left: 1.2rem;
+}
+
+#skills li {
+  display: flex;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: rgb(20, 46, 71);
+  background-color: rgb(192, 200, 208);
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgb(182, 204, 254);
+}
+
+#skills p {
+  margin: 0;
+  padding: 0 0.5rem;
+}
+
+#experience {
+  margin-top: 8rem;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+#experience h3 {
+  margin-bottom: 0;
+}
+
+#experience ol {
+  padding-left: 0;
+}
+
+#experience li {
+  padding-bottom: 0.2rem;
+}
+
+.tenure {
+  font-style: italic;
+  margin-top: 0;
+}
+
+#contact {
+  margin-top: 8rem;
+  font-size: 1.1rem;
+}
+
+#contact ul {
+  padding-left: 0;
+}
+
+#contact li {
+  padding-bottom: 1rem;
+}
+
+#contact h3 {
+  margin-bottom: 0.5rem;
+}
+
+#contact-me {
+  display: flex;
+  padding: 0.9rem 0;
+  justify-content: space-evenly;
+  background: linear-gradient(245deg, rgb(71, 166, 253), rgb(182, 204, 254));
+  border-radius: 0.5rem;
+  box-shadow: 3px 3px 10px rgb(182, 204, 254);
+}
+
+form {
+  width: 50%;
+  border-radius: 0.5rem;
+}
+
+form ul {
+  padding: 0;
+  margin: 0;
+}
+
+form li {
+  padding: 1rem;
+}
+
+form label {
+  display: block;
+  color: black;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1rem;
+  border: 2px solid rgb(159, 159, 159);
+  color: rgb(58, 58, 58);
+  padding: 0.25rem;
+}
+
+input:focus,
+textarea:focus {
+  background-color: rgb(251, 172, 196);
+  color: rgb(32, 5, 6);
+  border-color: rgb(32, 5, 63);
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  font: inherit;
+  background-color: rgb(17, 91, 209);
+  color: white;
+  border: 0.1rem solid rgb(32, 5, 63);
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(0, 98, 255);
+  border-color: rgb(17, 91, 209);
+}
+
+.form-control label {
+  text-align: left;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+#contact li a {
+  text-decoration: none;
+  color: rgb(17, 91, 209);
+}
+
+#contact li a:hover {
+  color: rgb(0, 69, 179);
+  font-style: italic;
+}
+
+#social img {
+  width: 4rem;
+}
+
+#social ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 0;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 4rem;
+  color: rgb(146, 201, 251);
+}
+
+footer a {
+  color: rgb(146, 201, 251);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: rgb(75, 167, 252);
+}

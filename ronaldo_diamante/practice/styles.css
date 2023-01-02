@@ -1,0 +1,56 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: rgb(38, 38, 38);
+  padding: 0;
+  margin: 0;
+}
+
+#container {
+  width: 60%;
+  padding: 4%;
+  margin: 50px auto 0 auto;
+  background: linear-gradient(135deg, rgb(184, 184, 255), rgb(253, 182, 248));
+}
+
+#profile-header {
+  display: flex;
+  background-color: rgb(26, 38, 69);
+}
+
+hr {
+  border-color: black;
+}
+
+#profile-header img {
+  width: 200px;
+  border-radius: 1000px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+#profile-details {
+  padding: 25px 50px;
+  color: rgb(255, 255, 235);
+}
+
+#profile-details h1 {
+  margin-bottom: 0px;
+}
+
+#profile-details p {
+  margin: 5px 0;
+}
+
+#profile-details span {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact h3 {
+  margin-block: 0;
+}

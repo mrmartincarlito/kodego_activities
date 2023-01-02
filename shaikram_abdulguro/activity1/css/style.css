@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+    background: #2d2f30; }
+h1 {
+    color: blue; }
+h3 {
+    color: gray; }
+form {
+    margin-top: 5em;
+    width:500px;
+    height:auto;
+    border: 1px solid grey;
+    background:#fff;
+    padding: 2em;
+    border-radius: 3px; }
+h3, label {
+    float: left;}
+ul {
+    margin: 4em 0 1em; }

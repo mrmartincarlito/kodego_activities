@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(206, 206, 202);
+    font-family: arial;
+}
+
+.pInfo {
+    background-color: rgb(117, 120, 121);
+    font-family: Arial;
+    border: 2px solid rgb(146, 144, 144);
+    width: 300px;
+    height: 1200px;
+    top: 10px;
+    left:5px;
+    padding:10px;
+    position:absolute;
+}
+.mypic {
+    top:20px;
+    left:15px;
+    padding:3px;
+    position:absolute;
+}
+.pInfoA {
+    top:300px;
+    left:10px;
+    padding:1px;
+    position: absolute;
+    color: rgb(235, 230, 230);
+}
+.pInfotable {
+    top:400px;
+    left:10px;
+    padding:1px;
+    position:absolute;
+    font-family: Arial;
+    color:rgb(19, 18, 18);
+}
+.dInfo {
+    background-color: rgb(247, 247, 232);
+    font-family: Arial;
+    width: 800px;
+    height: 1200px;
+    top:10px;
+    left:350px;
+    padding:20px;
+    position:absolute;
+}
+
+.sign{
+    font-size: 20px;
+    color: rgb(27, 27, 27);
+    position:absolute;
+    top: 1100px;
+    left:500px;
+}
+.myquote {
+    font-size: 18px;
+    color:green;
+}
