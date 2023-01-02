@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /*Navbar*/
 .navbar{
     display: flex;
@@ -72,7 +76,12 @@
     font-family: century;
     font-size: 2rem;
     text-align: center;
-    margin: 40px 0px;
+}
+.headings2{
+    font-family: century;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
 }
 .btn{
     padding: 10px 35px;
@@ -88,4 +97,278 @@
     color: black;
     box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
     font-weight: bold;
+}
+.btn ul{
+  display: flex;
+  list-style: none;
+  }
+
+.btn ul li{
+  font-display: century;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.btn ul li a{
+  text-decoration: none;
+  color: white;
+    transition: all .5s ease;
+}
+.btn ul li a:hover{
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 10px white;
+}
+
+
+/* About Section */
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 575px;
+    height: 400px;
+}
+.eheadings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+#intro h2{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* work experience section*/
+#workexperience{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9) ;
+}
+.headings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+.headings2{
+    font-family: century;
+    font-size: 20px;
+    text-align: center;
+    margin: 20px 0px;
+}
+.row{
+    display: flex;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    border: 1px solid black;
+    margin: 20px;
+    align-items: baseline;
+    text-align: start;
+    padding: 20px;
+    border-radius: 15px;
+    background: linear-gradient(to top, #ff2d2d 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+
+/* education */
+.aheadings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+/* skills */
+#skills{
+    background-color: rgba(0, 0, 0, 0.9) ;
+    padding: 20px;
+}
+.sheadings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+
+
+  .skill-bars{
+    padding: 25px 30px;
+    width: 600px;
+    background: #fff;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+  }
+  .skill-bars .bar{
+    margin: 20px 0;
+  }
+  .skill-bars .bar:first-child{
+    margin-top: 0px;
+  }
+  .skill-bars .bar .info{
+    margin-bottom: 5px;
+  }
+  .skill-bars .bar .info span{
+    font-weight: 500;
+    font-size: 17px;
+    opacity: 0;
+    animation: showText 0.5s 1s linear forwards;
+  }
+  @keyframes showText {
+    100%{
+      opacity: 1;
+    }
+  }
+  .skill-bars .bar .progress-line{
+    height: 10px;
+    width: 100%;
+    background: #f0f0f0;
+    position: relative;
+    transform: scaleX(0);
+    transform-origin: left;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+                0 1px rgba(255,255,255,0.8);
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  @keyframes animate {
+    100%{
+      transform: scaleX(1);
+    }
+  }
+  .bar .progress-line span{
+    height: 100%;
+    position: absolute;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    background: #ff2d2d;
+    animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+  }
+  .bar .progress-line.html span{
+    width: 45%;
+  }
+  .bar .progress-line.css span{
+    width: 45%;
+  }
+  .bar .progress-line.jquery span{
+    width: 35%;
+  }
+  .bar .progress-line.php span{
+    width: 35%;
+  }
+  .bar .progress-line.adobe span{
+    width: 95%;
+  }
+  .progress-line span::before{
+    position: absolute;
+    content: "";
+    top: -10px;
+    right: 0;
+    height: 0;
+    width: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: #000;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  .progress-line span::after{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    font-weight: 500;
+    background: #000;
+    color: #fff;
+    padding: 1px 8px;
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    animation: showText2 0.5s 1.5s linear forwards;
+  }
+  @keyframes showText2 {
+    100%{
+      opacity: 1;
+    }
+  }
+  .progress-line.html span::after{
+    content: "45%";
+  }
+  .progress-line.css span::after{
+    content: "45%";
+  }
+  .progress-line.jquery span::after{
+    content: "35%";
+  }
+  .progress-line.php span::after{
+    content: "35%";
+  }
+  .progress-line.adobe span::after{
+    content: "95%";
+  }
+
+  /* REFERENCE */
+  #reference{
+    background-color: rgba(0, 0, 0, 0.9) ;
+    padding: 20px;
+}
+.rheadings{
+    font-family: century;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+}
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead{
+  background-color: #ee2828;
+}
+.table thead tr th{
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.35px;
+  color: #ffff;
+  opacity: 1;
+  padding: 12px;
+  vertical-align: top;
+  border: 1px solid #dee2e685;
+}
+.table tbody tr td{
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  font-weight: normal;
+  color: #f1f1f1;
+  background-color: #3c3f44;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #dee2e685;
 }
