@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <table>
+            <tr>
+                <td>First Name: </td>
+                <td><input type="text" required placeholder="Enter FirstName" name="firstname" id="firstname" /></td>
+            </tr>
+            <tr>
+                <td>Last Name: </td>
+                <td><input type="text" required placeholder="Enter LastName" name="lastname" id="lastname" /></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" required placeholder="Enter Email" name="email" id="email" /></td>
+            </tr>
+            <tr>
+                <td>Contact #: </td>
+                <td><input type="number" required placeholder="Enter Contact" name="contact" id="contact" /></td>
+            </tr>
+            <tr>
+                <td>Gender: </td>
+                <td><input type="radio" required id="gender" value="Male" /> Male <input type="radio" id="gender"
+                        value="Female" /> Female</td>
+            </tr>
+            <tr>
+                <td><button onclick="saveDetails()">SAVE</button></td>
+            </tr>
+
+        </table>
+        <hr>
+
+        <p type=text id="myfullname">Your name is </p>
+
+        <p type=text id="myemailadd">Email Address is </p>
+
+        <p type=text id="mycontactnum">Contact number is</p>
+
+        <p type=text id="mygender">Gender is </p>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script>
+    let user = {
+        "nFirst": "Edson",
+        "nLast": "Longares",
+        "mailAdd": "longares",
+        "phone": "09996544515",
+        "gender": "Male"
+    }
+
+    function saveDetails() {
+
+        user.nFirst = $("#firstname").val();
+        user.nLast = $("#lastname").val();
+        user.mailAdd = $("#email").val();
+        user.phone = $("#contact").val();
+        user.gender = $("#gender").val();
+
+        $("#myfullname").text("Your name is " + user.nFirst + " " + user.nLast + ".");
+        $("#myemailadd").text("Email Address is " + user.mailAdd + ".");
+        $("#mycontactnum").text("Contact number is " + user.phone + ".");
+        $("#mygender").text("Gender is " + user.gender + ".");
+    }
+</script>
+
+</html>

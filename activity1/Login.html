@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROFILE LOGIN</title>
+    <meta name="viewport" content="width=device-witdh, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(248, 246, 246);
+            height: 500px;
+        }
+        form {
+            background-color: rgb(102, 100, 100);
+            position: absolute;
+            width: 1000px;
+            height: 500px;
+            top: 50px;
+            left: 150px;
+            font-family: Arial;
+            padding: 20px;
+            border: 4px solid rgb(56, 56, 56);
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <div class="container">
+            <form>
+                <div style="
+                position:absolute;
+                top:10px;
+                left:10px;
+                padding-left:5px;
+                width:500px;
+                height:500px;
+                ">
+                    <img src="Circles.png" width="500" height="500" />
+                </div>
+                <div style="
+                background-color: rgb(48, 47, 47);
+                position:absolute;
+                top:150px;
+                left:580px;
+                padding-left:5px;
+                width:400px;
+                height:250px;
+                color:rgb(187, 186, 184)
+               ">
+                    <div style="position:relative; top:10px; left:20px; color:whitesmoke;">
+                        <h3>MY LOGIN</h3>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>Username: </td>
+                            <td><input type="text" name="user_id" id="userID"> </td>
+                        </tr>
+                        <tr>
+                            <td>Password: </td>
+                            <td><input type="Password" name="Password" id="passID"></td>
+                        </tr>
+
+                    </table>
+                    <div>
+                        <button onclick="checker()"
+                            style="width: 260px; height: 30px; background-color: rgb(161, 165, 164); border:2px solid rgb(88, 88, 88);">LOGIN</button>
+                    </div>
+                    <div>
+                        <span> Forget Username/Password</span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </center>
+</body>
+<script>
+    function checker() {
+        var user1 = document.getElementById('userID');
+        var pass1 = document.getElementById('passID');
+        var dUser = "onniKodego";
+        var dPass = "abc123";
+        if (user1.value == dUser && pass1.value == dPass) {
+            alert("Login Success!");
+        } else if (user1.value == dUser && pass1.value !== dPass) {
+            alert("Wrong Password");
+        } else if (user1.value !== dUser && pass1.value == dPass) {
+            alert("Wrong Username");
+        } else {
+            alert("Wrong Username and Password");
+        }
+    }
+</script>
+</html>
