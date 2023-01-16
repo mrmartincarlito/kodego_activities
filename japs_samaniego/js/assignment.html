@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           
+        </title>
+        <style>
+
+        </style>
+        <link rel=""/>
+        <meta>
+
+    </head>
+
+    <body>
+        <form action="test.php" target="_blank" method="GET" onsubmit="return getUsername()">
+            <table>
+                <tr>
+                    <td>First Name: </td>
+                    <td><input type="text" required placeholder="Enter First Name" name="firstname" id="firstname"/></td>
+                </tr>
+                <tr>
+                    <td>Last Name: </td>
+                    <td><input type="text" required placeholder="Enter Last Name" name="lastname" id="lastname"/></td>
+                </tr>
+                <tr>
+                    <td>Email Address: </td>
+                    <td><input type="email" required placeholder="Enter Email" name="email"/></td>
+                </tr>
+                <tr>
+                    <td>Contact #: </td>
+                    <td><input type="number" placeholder="Enter Contact Number" name="contact" id="contact"/></td>
+                </tr>
+                <tr>
+                    <td>Gender: </td>
+                    <td><input type="radio" name="gender" value="Male"/> Male  <input type="radio" name="gender" value="Female"/> Female</td>
+                </tr>
+                <tr>
+                    <td><input type="submit" /> 
+                </tr>
+            </table>
+        </form>
+        <hr>
+        <p id="demo"></p>
+    </body>
+
+    <script>
+        
+        function getUsername() {
+            //pagkuha ng value sa input forms
+            let username = document.getElementById("username").value;
+            
+            if (username == "Carlito") {
+                alert("Successfully login");
+                //para magtuloy sa form action
+                return true;
+            } else {
+                alert(" Wrong username")
+            }
+
+            //para pigilan yung form action
+            return false;
+
+
+            //palitan ng value sa input forms
+            //document.getElementById("username").value = "Carlito";
+            //document.getElementById("contact").value = "09173114735";
+        }
+    </script>
+</html>
