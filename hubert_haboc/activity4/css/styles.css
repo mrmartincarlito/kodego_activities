@@ -1,0 +1,15 @@
+
+.id-container {
+    text-align: center;
+    padding: 10px;
+}
+
+.id-picture {
+    width: 55%;
+    border-radius: 100px;
+}
+
+.left {
+    height: 100vh;
+    background-color: #555;
+}
