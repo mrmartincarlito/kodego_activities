@@ -1,0 +1,47 @@
+.body {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+.header {
+  width: 100%;
+  background-color:cadetblue
+}
+.card-text {
+  font-size: large;
+}
+
+.tab {
+  padding-left: 35%;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+
+.tabcontent {
+  text-align: center;
+  display: none;
+  border: 1px solid #ccc;
+  border-top: none;
+}
