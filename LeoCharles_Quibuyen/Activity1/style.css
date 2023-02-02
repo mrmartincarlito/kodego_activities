@@ -1,0 +1,14 @@
+body{
+    background-color: blue;
+    padding-top: 10vh;
+}
+
+.form{
+    width: 250px;
+    padding: 30px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: red;
+    text-align: center;
+}
