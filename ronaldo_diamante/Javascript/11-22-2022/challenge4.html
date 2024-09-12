@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(77, 77, 77);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <h2>JavaScript Intro</h2>
+
+    <p>
+      # Code challenge 4 <br />
+      Create a function to compute for the sum of all ever and all odd numbers
+      from 1 to a positive number inputted on prompt. <br />
+      Alert the sum values of even and odd numbers.
+    </p>
+    <hr />
+    <button type="button" onclick="printSumOfEvenAndOdd()">
+      Sum of all even and odd numbers
+    </button>
+  </body>
+  <script>
+    function printSumOfEvenAndOdd() {
+      let num = prompt("Enter a number: ");
+      let totalEven = 0;
+      let totalOdd = 0;
+      for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+          // document.write("Even number: " + i + "<br />");
+          totalEven = totalEven + i;
+        } else {
+          // if (i % 2 !== 0) {
+          // document.write("Odd number: " + i + "<br />");
+          totalOdd = totalOdd + i;
+          // }
+        }
+      }
+      alert(
+        "The sum of even numbers is: " +
+          totalEven +
+          " and the sum of odd numbers is: " +
+          totalOdd
+      );
+    }
+  </script>
+</html>

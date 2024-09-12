@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(77, 77, 77);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <h2>JavaScript Intro</h2>
+
+    <p># This is Dialog Box examples</p>
+    <button type="button" onclick="myAlert()">Alert</button>
+    <button type="button" onclick="myConfirm()">Confirm</button>
+    <button type="button" onclick="myPrompt()">Prompt</button>
+  </body>
+  <script>
+    function myAlert() {
+      alert("Ronaldo will be the greatest programmer!");
+    }
+
+    function myConfirm() {
+      let choice = confirm("Are you sure you want to continue?");
+      if (choice) {
+        document.write("Please continue...");
+      } else {
+        document.write("Please do not continue...");
+      }
+    }
+
+    function myPrompt() {
+      let num1 = prompt("Please enter a number");
+      document.write("You input: " + num1);
+    }
+  </script>
+</html>

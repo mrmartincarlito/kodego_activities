@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(77, 77, 77);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <h2>JavaScript Intro</h2>
+
+    <button type="button" onclick="myFunction()">Click Me</button>
+    <hr />
+  </body>
+  <script>
+    for (let i = 0; i < 5; i++) {
+      document.write(i + "<br />");
+    }
+
+    // in PHP array:
+    // $numbers = array(2, 3, 4, 5);
+    document.write("<br />");
+
+    let numbers = [2, 3, 4, 5];
+
+    // in keyword is used to get enumerate the index of the array element or the key
+    for (number in numbers) {
+      document.write(numbers[number] + "<br />");
+    }
+    document.write("<br />");
+    document.write("<br />");
+    document.write("<br />");
+
+    // of keyword is used to get the value of per index
+    for (number of numbers) {
+      document.write(number + "<br />");
+    }
+    document.write("<br />");
+
+    for (let i = 0; i < numbers.length; i++) {
+      document.write(numbers[i] + "<br />");
+    }
+    document.write("<br />");
+
+    // let i = 1;
+    // myFunction();
+    function myFunction() {
+      //   document.write(i);
+      document.write("You pressed Click Me!");
+    }
+  </script>
+</html>

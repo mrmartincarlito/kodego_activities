@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(77, 77, 77);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <script></script>
+  </head>
+  <body>
+    <h2>JavaScript Intro</h2>
+
+    <p>
+      # Code challenge 1 <br />
+      Create a function to calculate the new sum value of x <br />
+      When x = 10 in 5 iterations
+    </p>
+  </body>
+  <script>
+    let x = 0;
+    function newSumValue(x) {
+      for (let i = 0; i < 5; i++) {
+        x += i;
+        document.write(x + "\n");
+      }
+      document.write("<br />");
+      document.write("The new sum value afer 5 iterations is: " + x);
+    }
+    newSumValue(10);
+  </script>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background: rgb(66, 66, 66);
+        color: aliceblue;
+      }
+      h2 {
+        text-align: center;
+        color: rgb(98, 164, 250);
+        font-size: 2.2rem;
+        font-weight: normal;
+      }
+
+      .test-class-blue,
+      h3 {
+        color: rgb(98, 164, 250);
+      }
+
+      .test-class-red {
+        color: rgb(255, 124, 124);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+    /**
+    * jQery Selector Syntax 
+    ?    $(document).ready(function(){
+    ?      $(selector)
+    ?    });
+    *
+    * A jQuery selector starts with a dollar sign and the we put a selector inside the braces around ().
+    * Here $() is called FACTORY FUNCTION, which makes use of following theree building blocks while selecting elements in a given document.
+    * 
+    * The 3 Selectors:
+    * ELEMENT Selector - Represents an HTML element name available in the DOM. For example $('p') selects all paragraphs <p> in the document
+    * #id Selector - Represents an HTML element available with the given ID in the DOM. For example $("#some-id") selects the single element in the document that has some-id as elements id.
+    * .class Selector - Represents an HTML element available with the given class in the DOM.
+    */ -->
+
+    <!-- 
+      /** 
+      ** For DOM: 
+      * jQuery - Get Content
+      * jQuery provides html() and text() methods to extract the content of the matched HTML element. Following is the syntax of theses two methods:
+      ?    $(selector).html();
+      ?    $(selector).text();
+      *
+      * The jQuery text() method returns plain text valueof the content where as html() returnsthe content with HTML tags. You will need to use jQuery selectors to select the target element
+      * --------------------------------
+      * 
+      * Get Form Field
+      * jQuery val() method is used to get the value froma any form field. Following is simple syntax of this method
+      *?    $(selector).val();
+      * --------------------------------
+      * 
+      * jQuery - Set Content
+      * jQuery html() and text() methods cna be used to set the content of the matched HTML element. Following is the syntax of theses two methods when they are used to set the values:
+      ?    $(selector).html(val, [function]);
+      ?    $(selector).text(val, [function]);
+      * 
+      * Here val is the HTML of text content to be set for the element. We can provide an optional callback function to these methods which will be called when the value of the element will be set.
+      * The jQuery text() method set plain text value of the content where as html() method sets the content with HTML tags
+      * --------------------------------
+      *
+      * Set Form Fields
+      * jQuery val() method is also used to get the value from any form field. Following is the syntax of this method when it is used to set the value.
+      ?    $(selector).val();
+      * Here val is the value to be set for the input field. We can provide an optional callback function which will be called when the value of the field will be set.
+      */ -->
+
+    <!-- /**
+      ** AJAX stands for Asynchronous JAvaScript and XML. AJAX is a new technique for creating better, faster, and more interactive web applications with the help of XML, HTML, CSS AND JavaScript
+      */ -->
+
+    <h2>jQuery Intro</h2>
+    <p id="test" class="test-class-blue">
+      Welcome to jQuery, DOM and JSON session. (id="test")
+    </p>
+    <!-- <p id="test" class="test-class-blue">
+      Second welcome to jQuery session. (id="test")
+    </p> -->
+    <hr />
+    <br />
+    <button id="btnClick">MAKE IT RED and BOLD - #btnClick</button>
+    <br />
+    <br />
+
+    <button id="btnClick" onclick="changeToRed()">
+      MAKE IT BIG and RED - function changeToRed()
+    </button>
+
+    <br /><br />
+    <hr />
+    <h2>JSON and DOM Intro</h2>
+
+    Username: <input type="text" id="username" />
+    <button onclick="getPValue()">GET CONTENT</button>
+
+    <br /><br />
+    <!-- Author: <input type="text" id="author" />
+    <button onclick="changeAuthorName()">Change Author Name</button> -->
+
+    <hr />
+    <h3>Book Information Form</h3>
+    <table>
+      <tr>
+        <td>Author:</td>
+        <td><input type="text" id="author" /></td>
+      </tr>
+      <tr>
+        <td>Title:</td>
+        <td><input type="text" id="title" /></td>
+      </tr>
+      <tr>
+        <td>Published Date:</td>
+        <td><input type="date" id="published_date" /></td>
+      </tr>
+      <tr>
+        <td>Genre:</td>
+        <td><input type="text" id="genre" /></td>
+      </tr>
+    </table>
+    <button onclick="save()">SAVE</button>
+    <br /><br />
+    <h3>Book Information</h3>
+    <p id="bookAuthor">Author</p>
+    <p id="bookTitle">Title</p>
+    <p id="bookDate">Published Date</p>
+    <p id="bookGenre">Genre</p>
+  </body>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script>
+    // JSON format
+    let book = {
+      author: "Ronaldo Diamante",
+      title: "Mastering HTML, CSS and JS",
+      published_date: "August 1, 2027",
+      genre: "Programming",
+    };
+
+    function save() {
+      book.author = $("#author").val();
+      book.title = $("#title").val();
+      book.published_date = $("#published_date").val();
+      book.genre = $("#genre").val();
+
+      // Papunta kay php
+      // JSON.stringify()
+      // json object convert to string
+      //
+      // Pagkarating kay PHP
+      // json_decode convert string to json
+      //
+      // Mula kay PHP
+      // json_encode convert array to string
+      // Pagkarating kay AJAX
+      // JSON.parse convert to string to JSON
+
+      $.ajax({
+        url: "test.php?book=" + JSON.stringify(book),
+        success: function (response) {
+          let parseJSON = JSON.parse(response);
+          alert(parseJSON.message);
+          if (parseJSON.message == "Successful ka") {
+            window.location.href = "dashboard.html";
+          }
+        },
+      });
+      // $("#bookAuthor").text(book.author);
+      // $("#bookTitle").text(book.title);
+      // $("#bookDate").text(book.published_date);
+      // $("#bookGenre").text(book.genre);
+    }
+
+    // Start of jQuery code
+    $(document).ready(function () {
+      //   let booksJSON = {
+      //     books: [{}],
+      //   };
+      //
+      // Element selector
+      // accessible thru its element tag
+      // console.log($("p").text());
+      // console.log($("p").html());
+      // console.log(document.getElementsByTagName("p")[0].innerHTML); // Equivalent to jQuery
+      //
+      // ID Selector
+      // Pag kuha or get
+      // console.log($("#test").text());
+      //
+      // Pag set or pag replace ng text via ID selector
+      // $("#test").text("Hello, Ronaldo!");
+      //
+      // Class Selector
+      console.log($(".test-class-blue").html());
+      // $(".test-class-blue").attr("class", "test-class-red");
+      //
+      $("#btnClick").click(function () {
+        $(".test-class-blue").attr("class", "test-class-red");
+        // Make it bold
+        $("#test").css("font-weight", "bold");
+      });
+    });
+    // End of jQuery code
+
+    function changeToRed() {
+      // make it red
+      $(".test-class-blue").attr("class", "test-class-red"); // Output will be replaced with .test-class-red attribute
+      // make it big
+      $("#test").css("font-size", "50px");
+      $("#test").css("font-weight", "normal");
+    }
+
+    function getPValue() {
+      // element - use .text() or use .html()
+      // alert($("p").text());
+      // alert($("#test").html());
+      //
+      // forms - use .val()
+      // alert($("#username").val());
+      //
+      // jQuery Set content
+      // $("#test").text($("#username").val());
+      // $("#test").text("<h1>" + $("#username").val() + "</h1>");
+      // $("#test").html("<h1>" + $("#username").val() + "</h1>");
+      //
+      // Set form fields
+      // $("#username").val("Ronaldo");
+      //
+      // JSON calling sample
+      // alert(book.author);
+      //
+      // Replace the id="test" with JSON content
+      // $("#test").text(book.author);
+      $("#test").html("<h3>" + book.title + "</h3>");
+    }
+
+    function changeAuthorName() {
+      book.author = $("#author").val();
+      $("#test").text(book.author);
+    }
+  </script>
+</html>
