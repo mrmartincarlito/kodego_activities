@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
+    <link rel="stylesheet" href="/bootstrap-5.2.2-dist/css/bootstrap.min.css" />
+    <title>Ronaldo Diamante</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark bg-gradient">
+        <!-- navbar-expand-md = this will expand on md breakpoint -->
+        <div class="container-lg">
+          <!-- brand -->
+          <a class="navbar-brand fw-semibold" href="#intro">
+            <!-- <img
+              src="/assets/images/navbar-image.png"
+              alt="Logo"
+              width="25"
+              height="25"
+              class="d-inline-block align-text-top"
+            /> -->
+            Ronaldo Diamante
+          </a>
+
+          <!-- toggle button for mobile nav -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#main-nav"
+            aria-controls="main-nav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- navbar links -->
+          <div
+            class="collapse navbar-collapse justify-content-end align-center"
+            id="main-nav"
+          >
+            <ul class="navbar-nav fw-semibold">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="container-lg text-white" id="about">
+      <h1 class="text-center pb-4 display-3 fw-bold">About Me</h1>
+      <div class="row g-4">
+        <div class="col-md-5 col-sm-12 text-center">
+          <img
+            src="/assets/profile.jpg"
+            alt="profile image"
+            class="rounded img-fluid"
+            width="300"
+            height="300"
+          />
+        </div>
+        <div class="col-md-7 col-sm-12">
+          <p>
+            Hey, I'm <strong>Ronaldo Diamante</strong>!
+            <br />
+            <br />
+            I'm currently delving into web development through KodeGo. I'm a
+            graduate of Electronics and Communications Engineering and currently
+            working as Senior Engineer in one of the biggest telecoms in the
+            Phillipines. I'm a Linux enthusiast for more than 3 years now and I
+            can navigate on terminal comfortably which inspires me to learn
+            programming.
+            <br />
+            <br />
+            Outside of work I like to spend time with my family, walking with
+            our doberman and labrador, running 5km, and tinkering my PC.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="container-lg" id="skills">
+      <h1 class="text-center pb-4 display-3 fw-bold text-white">My Skills</h1>
+      <div class="container text-center">
+        <p>
+          Here are my skills and technologies that I have been working with.
+        </p>
+      </div>
+      <div class="container-lg col-6">
+        <div class="row row-cols-3">
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/html5-original.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">HTML5</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/css3-plain.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">CSS3</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/git-plain.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Git</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/github-original.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">GitHub</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/linux-original.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Linux</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-3" style="max-width: 220px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img
+                  src="/assets/icons/bootstrap-original.svg"
+                  class="img-fluid rounded-start"
+                  alt="HTML5 logo"
+                />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">bootstrap</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container col-8">
+        <h3>For Row:</h3>
+        <div class="container bg-secondary rounded">
+          <div class="container g-2">
+            <div class="row row-cols-2 p-3">
+              <div class="col-md-4 col-12 pb-3">
+                <div class="box"></div>
+              </div>
+              <div class="col-md-4 col-12">
+                <div class="box"></div>
+              </div>
+              <div class="col-4">
+                <div class="box"></div>
+              </div>
+              <div class="col-4">
+                <div class="box"></div>
+              </div>
+              <div class="col-4">
+                <div class="box"></div>
+              </div>
+              <div class="col-4">
+                <div class="box"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section></section>
+    <footer>
+      <div class="container text-light text-center py-3">
+        <!-- <hr /> -->
+        <!-- Back to Top -->
+        <!-- <a href="#intro">
+          <svg width="32" height="32" viewBox="0 0 100 100">
+            <path
+              fill="white"
+              d="m50 0c-13.262 0-25.98 5.2695-35.355 14.645s-14.645 22.094-14.645 35.355 5.2695 25.98 14.645 35.355 22.094 14.645 35.355 14.645 25.98-5.2695 35.355-14.645 14.645-22.094 14.645-35.355-5.2695-25.98-14.645-35.355-22.094-14.645-35.355-14.645zm20.832 62.5-20.832-22.457-20.625 22.457c-1.207 0.74219-2.7656 0.57812-3.7891-0.39844-1.0273-0.98047-1.2695-2.5273-0.58594-3.7695l22.918-25c0.60156-0.61328 1.4297-0.96094 2.2891-0.96094 0.86328 0 1.6914 0.34766 2.293 0.96094l22.918 25c0.88672 1.2891 0.6875 3.0352-0.47266 4.0898-1.1562 1.0508-2.9141 1.0859-4.1133 0.078125z"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: #e8e6e3"
+            ></path>
+          </svg>
+        </a> -->
+
+        <!-- <p class="pt-4">© Ronaldo Diamante 2022</p> -->
+      </div>
+    </footer>
+    <script src="/bootstrap-5.2.2-dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
