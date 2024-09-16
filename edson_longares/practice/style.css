@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(206, 206, 202);
+    font-family: arial;
+}
+
+.pInfo {
+    background-color: rgb(130, 132, 133);
+    font-family: Arial;
+    border: 2px solid rgb(146, 144, 144);
+    width: 300px;
+    height: 1000px;
+    top: 10px;
+    left:5px;
+    padding:10px;
+    position:absolute;
+}
+
+.dInfo {
+    background-color: rgb(247, 247, 232);
+    font-family: Arial;
+    width: 800px;
+    height: 1000px;
+    top:10px;
+    left:340px;
+    padding:20px;
+    position:absolute;
+}
+.myquote {
+    font-size: 18px;
+    color:green;
+}
