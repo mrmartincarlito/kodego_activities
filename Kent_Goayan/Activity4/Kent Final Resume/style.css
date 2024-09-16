@@ -1,0 +1,73 @@
+
+
+.click {
+    background-color: rgb(229, 229, 238);
+    margin-left: 0;
+    margin-right: 0;
+    height: 180px;
+}
+.click:hover{
+    background-color: rgb(39, 39, 90);
+}
+.click,.links{
+    padding: 12px;
+    font-size: 0.7em;
+    font-family: futura Md Bt;
+    border: none;
+    outline: none;
+    width: 200px;
+    color: black;
+    transition: 0.3s;
+}
+.list{
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newlist {
+    transform:scaleY(1);
+}
+.links {
+    background-color: rgb(197, 205, 223);
+
+}
+.links:hover {
+    background-color: rgb(48, 48, 56);
+    transform: scale(1.1);
+}
+h1{
+    margin-left: 3cm;
+    font-size: 30px;
+    font-style: bold;
+}
+.card-img-top {
+    height: 200px;
+    width: 350px;
+    border-style: inherit;
+}
+.card {
+    margin-left: 3cm;
+}
+h2{
+    font-size: 20px;
+}
+h3{
+    font-size: 17px;
+    margin-top: 0;
+}
+.columns {
+    background-color: bisque;
+    width: 900px;
+    margin-left: 8cm;
+    font-size: 22px;
+    font-style: normal;
+}
+ol {
+    font-size: 18px;
+    margin-top: 3px;
+    background-color: rgb(252, 233, 233);
+    margin-left: 8cm;
+    width: 800px;
+    font-display: bold;
+}
