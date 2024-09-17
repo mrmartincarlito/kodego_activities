@@ -1,0 +1,66 @@
+.font-red {
+    color: red;
+}
+
+a {
+    color:white;
+}
+
+.center {
+    text-align: center;
+}
+
+.box1 {
+    background-color: aqua;
+    padding: 30px;
+    margin: 10px;
+    height: 100px;
+    width: 580px;
+
+}
+
+.box2{
+    background-color: greenyellow;
+    padding: 30px;
+    margin: 10px;
+}
+
+.box3 {
+    background-color:aquamarine;
+    padding: 60px;
+    margin: 10px;
+    width: 580px;
+    height: 350px;
+}
+
+.box4 {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 10px;
+    height: 80px;
+    width: 235px; 
+}
+
+.box5 {
+    background-color: bisque;
+    padding: 50px;
+    margin: 10px;
+    height: 300px;
+    width: 235px;
+}
+
+.box6 {
+    background-color: lightgray;
+    padding: 20px;
+    margin: 10px;
+    height: 60px;
+    width: 235px; 
+}
+
+.box7 {
+    background-color: lightcyan;
+    padding: 40px;
+    margin: 10px;
+    height: 100px;
+    width: 235px; 
+}
