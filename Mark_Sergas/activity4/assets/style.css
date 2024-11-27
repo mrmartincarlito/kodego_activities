@@ -1,13 +1,12 @@
 * {
     box-sizing: border-box;
 }
-body, h1 {margin: 0;}
+body, h1 {margin: 10px;}
 body {
     font-family: monospace;
     line-height: 1.4em;
-    color: #333;
     font-size: 20px;
-    background-color: rgb(147, 109, 79);
+    background-color: rgb(145, 91, 49);
 }
 .container {
     max-width: 1200px;
@@ -16,10 +15,6 @@ body {
 }
 .p2 {
     padding: 20px;
-}
-.flex {
-    display: flex;
-    align-items: center;
 }
 .flex {
     display: flex;
