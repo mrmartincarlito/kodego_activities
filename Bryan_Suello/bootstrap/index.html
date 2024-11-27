@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.min.js"
+      defer
+    ></script>
+    <script
+      src="./node_modules/@popperjs/core/dist/umd/popper.min.js"
+      defer
+    ></script>
+    <script
+      src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"
+      defer
+    ></script>
+    <style>
+      .steelblue {
+        background-color: steelblue;
+        color: #fff;
+      }
+      .rebeccapurple {
+        background-color: rebeccapurple;
+        color: #fff;
+      }
+      .purple {
+        background-color: purple;
+        color: #fff;
+      }
+      .nav {
+        background-color: gray;
+        color: orange;
+      }
+      .hero-section {
+        background-color: blue;
+        height: 50vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-1 steelblue">1</div>
+        <div class="col-3 rebeccapurple">3</div>
+        <div class="col-8 purple">8</div>
+      </div>
+      <div class="row nav">
+        <div class="col-6">Logo</div>
+        <div class="col-6">
+          <ul class="d-flex">
+            <li>Services</li>
+            <li>About Us</li>
+            <li>Reviews</li>
+          </ul>
+        </div>
+        <div class="row hero-section">
+          <div class="col">hero section</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
